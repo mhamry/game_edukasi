@@ -30,7 +30,7 @@ h1 {
   line-height: 150px;
   justify-content: center;
   transition: 1s;
-  z-index: 999;
+  z-index: 9;
   font-size: larger;
 }
 
