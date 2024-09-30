@@ -271,6 +271,7 @@ h3 {
   .tombol {
     margin-left: 5px;
     opacity: 0.8;
+    z-index: 999;
     position: absolute;
     top: 13px;
     height: 30px;
@@ -285,6 +286,7 @@ h3 {
   .petunjuk {
     margin-left: 5px;
     opacity: 0.8;
+    z-index: 999;
     position: absolute;
     top: 53px;
     height: 30px;
@@ -298,6 +300,7 @@ h3 {
   .e-book1 {
     margin-left: 5px;
     opacity: 0.8;
+    z-index: 999;
     position: absolute;
     top: 93px;
     height: 30px;
@@ -311,6 +314,7 @@ h3 {
   .e-book2 {
     margin-left: 5px;
     opacity: 0.8;
+    z-index: 999;
     position: absolute;
     top: 133px;
     height: 30px;
@@ -324,6 +328,7 @@ h3 {
   .e-book3 {
     margin-left: 5px;
     opacity: 0.8;
+    z-index: 999;
     position: absolute;
     top: 173px;
     height: 30px;
@@ -337,6 +342,7 @@ h3 {
   .score-container {
     margin-left: 5px;
     opacity: 0.8;
+    z-index: 999;
     position: absolute;
     top: 213px;
     height: 30px;
