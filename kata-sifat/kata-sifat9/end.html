@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>end</title>
+    <style>
+
+        body{
+
+          overflow: hidden;
+            
+        }
+
+        #canvas{
+          position: absolute;
+          top : 0;
+          left: 0;
+          z-index: -999;
+        }
+.end {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+
+  padding-top: 50px;
+  /* display: none; */
+ 
+  position: relative;
+
+  margin: auto;
+}
+
+.end h1 h2 p {
+  text-align: center;
+}
+.end span {
+  color: rgb(13, 0, 128);
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.end a {
+  display: block;
+  width: 150px;
+  height: 30px;
+  border-radius: 9px;
+  background-color: rgb(51, 209, 11);
+  margin: auto;
+  margin-top: 25px;
+  color: rgb(1, 8, 15);
+  line-height: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.end a:hover {
+  background-color: rgb(69, 201, 57);
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="end">
+        <h1>CONGRATULATION</h1>
+        <p>You have reached the required score to play on <P></P><span>level Ten</span></p></h3>
+        <p>"Tidak ada batas untuk menuntut ilmu. Semakin banyak kita belajar, semakin luas pandangan kita terhadap dunia."</p>
+        <p>"Pendidikan bukanlah beban, melainkan investasi terbaik untuk masa depan. Semakin tinggi investasi, semakin besar hasilnya."</p><p>"Pohon besar bermula dari biji kecil, begitu pula ilmu yang diperoleh dari langkah-langkah kecil menuju kesempurnaan." </p>
+    
+        <div class="next-level"><a href="../kata-sifat10/index.html">NEXT LEVEL</a></div>
+    
+      </div>
+
+      <canvas id="canvas"></canvas>
+
+      <script>
+         const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      var canvasW = canvas.width;
+      var canvasH = canvas.height;
+
+      // Fungsi acak warna
+
+      function getRandomColor() {
+        const letters = "0123456789ABCDEFG";
+        let color = "#";
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      let arcs = [];
+      for (var i = 0; i < 50; i++) {
+        // Acak warna
+        let color = getRandomColor();
+
+        // Acak ukuran
+
+        let radius = Math.random() * 100;
+
+        // Acak posisi
+
+        let x = Math.random() * canvasW;
+        let y = Math.random() * canvasH;
+
+        // acak kecepatan
+        let speedX = (Math.random() - 0.5) * 2;
+        let speedY = (Math.random() - 0.5) * 2;
+
+        // Acak tranparency
+
+        let globalAlpha = Math.random();
+
+        arcs.push({
+          x: x,
+          y: y,
+          radius: radius,
+          speedX: speedX,
+          speedY: speedY,
+          innerRadius: 0,
+          outerRadius: Math.PI * 2,
+          fillColor: color,
+          strokeColor: color,
+          globalAlpha: globalAlpha,
+        });
+      }
+
+      function drawArc(x, y, radius, innerRadius, outerRadius, fillColor, strokeColor, globalAlpha) {
+        ctx.beginPath();
+        ctx.arc(x, y, radius, innerRadius, outerRadius);
+        ctx.fillStyle = fillColor;
+        ctx.globalAlpha = globalAlpha;
+        ctx.fill();
+        ctx.strokeStyle = strokeColor;
+        ctx.stroke();
+        ctx.globalAlpha = 1.0;
+      }
+
+      // Fungsi animasi
+
+      function animate() {
+        ctx.clearRect(0, 0, canvasW, canvasH);
+
+        arcs.forEach((arc) => {
+          drawArc(arc.x, arc.y, arc.radius, arc.innerRadius, arc.outerRadius, arc.fillColor, arc.strokeColor, arc.globalAlpha);
+
+          arc.x += arc.speedX;
+          arc.y += arc.speedY;
+
+          if (arc.x > canvasW || arc.x < 0) arc.speedX = -arc.speedX;
+
+          if (arc.y > canvasH || arc.y < 0) arc.speedY = -arc.speedY;
+        });
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+      </script>
+    
+</body>
+</html>

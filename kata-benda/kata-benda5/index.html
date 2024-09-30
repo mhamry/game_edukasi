@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>level1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio class="sound-benar">
+      <source src="../../sound/aplause.mp3" />
+    </audio>
+
+    <audio class="congratulation">
+      <source src="../../sound/congratulation.mp3" />
+    </audio>
+
+    <audio class="sound-salah">
+      <source src="../../sound/salah.mp3" />
+    </audio>
+
+    <audio class="backsound" loop>
+      <source src="../../sound/song1.mp3" />
+    </audio>
+
+    <audio class="tryagain">
+      <source src="../../sound/tryagain.mp3" />
+    </audio>
+
+    <div class="tombol">
+      <div class="materi"><a href="materi.html" target="_blank">MATERI</a></div>
+    </div>
+
+    <div class="petunjuk">
+      <div class="materi1"><a href="#" target="_blank">Clue</a></div>
+    </div>
+
+    <div class="e-book1">
+      <div class="materi2"><a href="../../pdf/e-book1.pdf" target="_blank">E-book 1</a></div>
+    </div>
+
+    <div class="e-book2">
+      <div class="materi3"><a href="../../pdf/e-book2.pdf" target="_blank">E-book 2</a></div>
+    </div>
+
+    <div class="e-book3">
+      <div class="materi4"><a href="../../pdf/e-book3.pdf" target="_blank">E-book 3</a></div>
+    </div>
+
+    <div class="score-container">
+      <p>Score: <span class="user-score">0</span></p>
+    </div>
+
+    <center translate="no">
+      <h1>OCUPATION</h1>
+
+      <div
+        class="game 1"
+        data-alert="Jawaban yang benar adalah : TEACHER
+      "
+      >
+        <div class="kotak">
+          <h3 class="jawaban">TEACHER</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>GURU</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/guru.png" alt="" width="400" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">TEACHER</div>
+          <div class="choice">DRIVER</div>
+          <div class="choice">DOCTOR</div>
+          <div class="choice">NURSE</div>
+        </div>
+      </div>
+
+      <div class="game 2" data-alert="jawaban yang benar adalah: FISHERMAN">
+        <div class="kotak">
+          <h3 class="jawaban">FISHERMAN</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>NELAYAN</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/nelayan.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ARMY</div>
+          <div class="choice">FISHERMAN</div>
+          <div class="choice">HOUSEWIFE</div>
+          <div class="choice">ARCHITECT</div>
+        </div>
+      </div>
+
+      <div class="game 3" data-alert="Jawaban yang benar adalah : ARMY">
+        <div class="kotak">
+          <h3 class="jawaban">ARMY</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>TENTARA</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/tentara.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">DRIVER</div>
+          <div class="choice">ARMY</div>
+          <div class="choice">MIDWIFE</div>
+          <div class="choice">CHEF</div>
+        </div>
+      </div>
+
+      <div class="game 4" data-alert="Jawaban yang benar adalah : DRIVER">
+        <div class="kotak">
+          <h3 class="jawaban">DRIVER</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>SOPIR</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/sopir.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">DRIVER</div>
+          <div class="choice">NURSE</div>
+          <div class="choice">DOCTOR</div>
+          <div class="choice">TEACHER</div>
+        </div>
+      </div>
+
+      <div class="game 5" data-alert="Jawaaban yang benar adalah : MECHANIC">
+        <div class="kotak">
+          <h3 class="jawaban">MECHANIC</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>BENGKEL</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/bengkel.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">MECHANIC</div>
+          <div class="choice">HOUSEWIFE</div>
+          <div class="choice">FARMER</div>
+          <div class="choice">POLICEMAN</div>
+        </div>
+      </div>
+
+      <div class="game 6" data-alert="Jawaaban yang benar adalah : SAILOR">
+        <div class="kotak">
+          <h3 class="jawaban">SAILOR</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PELAUT</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/pelaut.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">SAILOR</div>
+          <div class="choice">MERCHANT</div>
+          <div class="choice">CIVIL SERVANT</div>
+          <div class="choice">POLICEMAN</div>
+        </div>
+      </div>
+
+      <div class="game 7" data-alert="Jawaaban yang benar adalah : POLICEMAN">
+        <div class="kotak">
+          <h3 class="jawaban">POLICEMAN</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>POLISI</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/polisi.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">PILOT</div>
+          <div class="choice">POLICEMAN</div>
+          <div class="choice">SINGER</div>
+          <div class="choice">SOCCER</div>
+        </div>
+      </div>
+
+      <div class="game 8" data-alert="Jawaaban yang benar adalah : PILOT">
+        <div class="kotak">
+          <h3 class="jawaban">PILOT</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PILOT</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/pilot.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">PILOT</div>
+          <div class="choice">SIGER</div>
+          <div class="choice">HOUSEWIFE</div>
+          <div class="choice">DRIVER</div>
+        </div>
+      </div>
+
+      <div class="game 9" data-alert="Jawaaban yang benar adalah : MERCHANT">
+        <div class="kotak">
+          <h3 class="jawaban">MERCHANT</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PEDAGANG</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/pedagang.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">CIVIL SERVANT</div>
+          <div class="choice">MERCHANT</div>
+          <div class="choice">CHEF</div>
+          <div class="choice">CARPENTER</div>
+        </div>
+      </div>
+
+      <div class="game 10" data-alert="Jawaaban yang benar adalah : FARMER">
+        <div class="kotak">
+          <h3 class="jawaban">FARMER</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PETANI</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/petani.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">FARMER</div>
+          <div class="choice">CARPENTER</div>
+          <div class="choice">MIDWIFE</div>
+          <div class="choice">NURSE</div>
+        </div>
+      </div>
+
+      <div class="game 11" data-alert="Jawaaban yang benar adalah : SOCCER">
+        <div class="kotak">
+          <h3 class="jawaban">SOCCER</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PEMAIN BOLA</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/pemainbola.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">SOCCER</div>
+          <div class="choice">CARPENTER</div>
+          <div class="choice">FARMER</div>
+          <div class="choice">MECHANIC</div>
+        </div>
+      </div>
+
+      <div class="game 12" data-alert="Jawaaban yang benar adalah : CIVIL SERVANT">
+        <div class="kotak">
+          <h3 class="jawaban">CIVIL SERVANT</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PEGAWAI NEGERI</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/pns.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">CIVIL SERVANT</div>
+          <div class="choice">POLICEMAN</div>
+          <div class="choice">FISHERMAN</div>
+          <div class="choice">HEADMASTER</div>
+        </div>
+      </div>
+
+      <div class="game 13" data-alert="Jawaaban yang benar adalah : CARPENTER">
+        <div class="kotak">
+          <h3 class="jawaban">CARPENTER</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>TUKANG KAYU</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/tukangkayu.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">DRIVER</div>
+          <div class="choice">PILOT</div>
+          <div class="choice">CHEF</div>
+          <div class="choice">CARPENTER</div>
+        </div>
+      </div>
+
+      <div class="game 14" data-alert="Jawaaban yang benar adalah : CHEF">
+        <div class="kotak">
+          <h3 class="jawaban">CHEF</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>JURU MASAK</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/jurumasak.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">FARMER</div>
+          <div class="choice">CHEF</div>
+          <div class="choice">MECHANIC</div>
+          <div class="choice">ARCHITECT</div>
+        </div>
+      </div>
+
+      <div class="game 15" data-alert="Jawaaban yang benar adalah : STEWARD">
+        <div class="kotak">
+          <h3 class="jawaban">STEWARD</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PRAMUGARI</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/pramugari.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ARCHITECT</div>
+          <div class="choice">STEWARD</div>
+          <div class="choice">TEACHER</div>
+          <div class="choice">STUDENT</div>
+        </div>
+      </div>
+
+      <div class="game 16" data-alert="Jawaaban yang benar adalah : LAWYER">
+        <div class="kotak">
+          <h3 class="jawaban">LAWYER</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PENGACARA</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/pengacara.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">LAWYER</div>
+          <div class="choice">CHEF</div>
+          <div class="choice">JUDGE</div>
+          <div class="choice">SCIENTIST</div>
+        </div>
+      </div>
+
+      <div class="game 17" data-alert="Jawaaban yang benar adalah : SINGER">
+        <div class="kotak">
+          <h3 class="jawaban">SINGER</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PENYANYI</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/penyanyi.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">SOCCER</div>
+          <div class="choice">SINGER</div>
+          <div class="choice">DRIVER</div>
+          <div class="choice">ARCHITEC</div>
+        </div>
+      </div>
+
+      <div class="game 18" data-alert="Jawaaban yang benar adalah : ARCHITECT">
+        <div class="kotak">
+          <h3 class="jawaban">ARCHITECT</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>ARSITEK</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/arsitek.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ARCHITECT</div>
+          <div class="choice">SINGER</div>
+          <div class="choice">SOCCER</div>
+          <div class="choice">MECHANIC</div>
+        </div>
+      </div>
+
+      <div class="game 19" data-alert="Jawaaban yang benar adalah : MIDWIFE">
+        <div class="kotak">
+          <h3 class="jawaban">MIDWIFE</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>BIDAN</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/bidan.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">MIDWIFE</div>
+          <div class="choice">DOCTER</div>
+          <div class="choice">TEACHER</div>
+          <div class="choice">SOLDIER</div>
+        </div>
+      </div>
+
+      <div class="game 20" data-alert="Jawaaban yang benar adalah : JOURNALIST">
+        <div class="kotak">
+          <h3 class="jawaban">JOURNALIST</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>WARTAWAN</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/wartawan.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">JOURNALIST</div>
+          <div class="choice">LAWYER</div>
+          <div class="choice">JUDGE</div>
+          <div class="choice">MERCHANT</div>
+        </div>
+      </div>
+    </center>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>

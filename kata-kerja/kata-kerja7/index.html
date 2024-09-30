@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>level2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio class="sound-benar">
+      <source src="../../sound/aplause.mp3" />
+    </audio>
+
+    <audio class="sound-salah">
+      <source src="../../sound/salah.mp3" />
+    </audio>
+
+    <audio class="backsound" loop>
+      <source src="../../sound/song1.mp3" />
+    </audio>
+
+    <div class="tombol">
+      <div class="profil"><a href="materi.html" target="_blank">MATERI</a></div>
+    </div>
+
+    <div class="petunjuk">
+      <div class="materi"><a href="#" target="_blank">Clue</a></div>
+    </div>
+
+    <div class="e-book1">
+      <div class="materi"><a href="../../pdf/e-book1.pdf" target="_blank">E-book 1</a></div>
+    </div>
+
+    <div class="e-book2">
+      <div class="materi"><a href="../../pdf/e-book2.pdf" target="_blank">E-book 2</a></div>
+    </div>
+
+    <div class="e-book3">
+      <div class="materi"><a href="../../pdf/e-book3.pdf" target="_blank">E-book 3</a></div>
+    </div>
+
+    <div class="score-container">
+      <p>score : <span class="user-score">0</span></p>
+    </div>
+    <h1>VERB</h1>
+    <center translate="no">
+      <div class="game 1" data-alert="Jawaban yang benar adalah : CUT">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MEMOTONG</h2>
+            <img src="../../image/verb/potong.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">CUT</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">CUT</div>
+          <div class="choice">GO</div>
+          <div class="choice">CLEAN</div>
+          <div class="choice">HELP</div>
+        </div>
+      </div>
+
+      <div class="game 2" data-alert="Jawaban yang benar adalah : SELL">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MENJUAL</h2>
+            <img src="../../image/verb/jual.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">SELL</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">BUY</div>
+          <div class="choice">COOK</div>
+          <div class="choice">TELL</div>
+          <div class="choice">SELL</div>
+        </div>
+      </div>
+
+      <div class="game 3" data-alert="Jawaban yang benar adalah : BEGIN">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MULAI</h2>
+            <img src="../../image/verb/mulai.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">BEGIN</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">BEGIN</div>
+          <div class="choice">LIKE</div>
+          <div class="choice">WASH</div>
+          <div class="choice">PLAY</div>
+        </div>
+      </div>
+
+      <div class="game 4" data-alert="Jawaban yang benar adalah : HOLD">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MEMEGANG</h2>
+            <img src="../../image/verb/pegang.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">HOLD</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">HOLD</div>
+          <div class="choice">WALK</div>
+          <div class="choice">WANT</div>
+          <div class="choice">COME</div>
+        </div>
+      </div>
+
+      <div class="game 5" data-alert="Jawaban yang benar adalah : EAT DINNER">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MAKAN MALAM</h2>
+            <img src="../../image/verb/dinner.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">EAT DINNER</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">EAT DINNER</div>
+          <div class="choice">EAT LUNCH</div>
+          <div class="choice">EAT BREKFAST</div>
+          <div class="choice">TAKE A BATH</div>
+        </div>
+      </div>
+
+      <div class="game 6" data-alert="Jawaban yang benar adalah : EAT LUNCH">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MAKAN SIANG</h2>
+            <img src="../../image/verb/lunch.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">EAT LUNCH</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">EAT DINNER</div>
+          <div class="choice">EAT LUNCH</div>
+          <div class="choice">EAT BREAKFAST</div>
+          <div class="choice">GET UP</div>
+        </div>
+      </div>
+
+      <div class="game 7" data-alert="Jawaban yang benar adalah : GO">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">PERGI</h2>
+            <img src="../../image/verb/pergi.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">GO</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">GO</div>
+          <div class="choice">VISIT</div>
+          <div class="choice">DELETE</div>
+          <div class="choice">WRITE</div>
+        </div>
+      </div>
+
+      <div class="game 8" data-alert="Jawaban yang benar adalah : KNOW">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">TAU</h2>
+            <img src="../../image/verb/tahu.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">KNOW</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">INVITE</div>
+          <div class="choice">KNOW</div>
+          <div class="choice">EAT</div>
+          <div class="choice">RERGRET</div>
+        </div>
+      </div>
+
+      <div class="game 9" data-alert="Jawaban yang benar adalah : PARTICIPATE">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">IKUT SERTA</h2>
+            <img src="../../image/verb/ikut.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">PARTICIPATE</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">LOVE</div>
+          <div class="choice">PARTICIPATE</div>
+          <div class="choice">SMILE</div>
+          <div class="choice">CARE</div>
+        </div>
+      </div>
+
+      <div class="game 10" data-alert="Jawaban yang benar adalah : SEE">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MELIHAT</h2>
+            <img src="../../image/verb/lihat.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">SEE</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">SEE</div>
+          <div class="choice">KNOW</div>
+          <div class="choice">CARE</div>
+          <div class="choice">REPAIR</div>
+        </div>
+      </div>
+
+      <div class="game 11" data-alert="Jawaban yang benar adalah : HEAR">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MENDENGAR</h2>
+            <img src="../../image/verb/dengar.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">HEAR</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">HEAR</div>
+          <div class="choice">START</div>
+          <div class="choice">STOP</div>
+          <div class="choice">BORROW</div>
+        </div>
+      </div>
+
+      <div class="game 12" data-alert="Jawaban yang benar adalah : TELL">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MENCERITAKAN</h2>
+            <img src="../../image/verb/menceritakan.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">TELL</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">START</div>
+          <div class="choice">TELL</div>
+          <div class="choice">COOK</div>
+          <div class="choice">DRINKE</div>
+        </div>
+      </div>
+
+      <div class="game 13" data-alert="Jawaban yang benar adalah : BREAK">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">PECAH</h2>
+            <img src="../../image/verb/pecah.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">BREAK</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">CARE</div>
+          <div class="choice">WANT</div>
+          <div class="choice">WASH</div>
+          <div class="choice">BREAK</div>
+        </div>
+      </div>
+
+      <div class="game 14" data-alert="Jawaban yang benar adalah : HIT">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MEMUKUL</h2>
+            <img src="../../image/verb/pukul.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">HIT</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">HIT</div>
+          <div class="choice">PRACTICE</div>
+          <div class="choice">BUY</div>
+          <div class="choice">ACCOMPANY</div>
+        </div>
+      </div>
+
+      <div class="game 15" data-alert="Jawaban yang benar adalah : STEAL">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MENCURI</h2>
+            <img src="../../image/verb/curi.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">STEAL</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">LEND</div>
+          <div class="choice">LOOK</div>
+          <div class="choice">STEAL</div>
+          <div class="choice">LOVE</div>
+        </div>
+      </div>
+
+      <div class="game 16" data-alert="Jawaban yang benar adalah : TAKE">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MENGAMBIL</h2>
+            <img src="../../image/verb/ambil.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">TAKE</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">TAKE</div>
+          <div class="choice">MAKE</div>
+          <div class="choice">KISS</div>
+          <div class="choice">CRY</div>
+        </div>
+      </div>
+
+      <div class="game 17" data-alert="Jawaban yang benar adalah : TEAR">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MEROBEK</h2>
+            <img src="../../image/verb/robrk.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">TEAR</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">TEAR</div>
+          <div class="choice">HEAR</div>
+          <div class="choice">LIKE</div>
+          <div class="choice">TELL</div>
+        </div>
+      </div>
+
+      <div class="game 18" data-alert="Jawaban yang benar adalah : STIR">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MENGADUK</h2>
+            <img src="../../image/verb/aduk.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">STIR</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">TRY</div>
+          <div class="choice">CRY</div>
+          <div class="choice">STIR</div>
+          <div class="choice">PRAY</div>
+        </div>
+      </div>
+
+      <div class="game 19" data-alert="Jawaban yang benar adalah : PUT">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MELETAKKAN</h2>
+            <img src="../../image/verb/letak.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">PUT</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">PUT</div>
+          <div class="choice">TELL</div>
+          <div class="choice">PAY</div>
+          <div class="choice">SAY</div>
+        </div>
+      </div>
+
+      <div class="game 20" data-alert="Jawaban yang benar adalah : HAVE">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">PUNYA</h2>
+            <img src="../../image/verb/punya.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">HAVE</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">HAVE</div>
+          <div class="choice">WORK</div>
+          <div class="choice">SWIM</div>
+          <div class="choice">SPEAK</div>
+        </div>
+      </div>
+    </center>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>

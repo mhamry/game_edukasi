@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Utama</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Halaman Utama</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+          body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+          }
+
+          /* .container {
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(green, blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      } */
+
+          .tombol a {
+            text-decoration: none;
+            font-size: 40px;
+            color: rgb(0, 0, 0);
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            margin-top: 30px;
+          }
+
+          .materi {
+            margin-left: 25px;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            height: 50px;
+            width: 130px;
+            border-radius: 8px;
+            display: flex;
+            background-color: aliceblue;
+            animation: tombol 2s ease-in-out infinite;
+          }
+
+          @keyframes tombol {
+            0% {
+              background-image: linear-gradient(green, purple);
+            }
+
+            25% {
+              background-image: linear-gradient(yellow, rgb(0, 7, 100));
+            }
+
+            50% {
+              background-image: linear-gradient(rgb(241, 145, 145), rgb(61, 61, 218));
+            }
+            75% {
+              background-image: linear-gradient(grey, rgb(233, 11, 48));
+            }
+
+            100% {
+              background-image: linear-gradient(rgb(250, 114, 148), rgb(12, 245, 226));
+            }
+          }
+
+          .profil {
+            text-align: center;
+            margin: auto;
+          }
+          .profil a {
+            text-decoration: none;
+            color: rgb(243, 233, 233);
+          }
+
+          .materi:hover {
+            transform: scale(1.2);
+          }
+
+          .container {
+            max-width: 800px;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            gap: 8px;
+            margin-top: 100px;
+            flex-wrap: wrap;
+          }
+
+          .container a {
+            text-decoration: none;
+          }
+
+          .noun {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+          }
+
+          .verb {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+          }
+
+          .adjective {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+          }
+
+          .personal-pronoun {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+          }
+
+          .noun,
+          .verb,
+          .adjective,
+          .personal-pronoun {
+            width: 150px;
+            height: 150px;
+            box-shadow: 6px 6px 6px 4px rgb(255, 255, 255);
+            border-radius: 15px;
+            margin-right: 50px;
+          }
+
+          #canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -999;
+          }
+
+          @media (max-width: 600px) {
+            .container {
+              width: 400px;
+              gap: 10px;
+              margin-top: 80px;
+            }
+            .noun,
+            .verb,
+            .adjective,
+            .personal-pronoun {
+              width: 150px;
+              height: 150px;
+              box-shadow: 6px 6px 6px 4px rgb(0, 0, 0);
+              border-radius: 15px;
+              margin-right: 10px;
+            }
+          }
+
+          .noun p,
+          .verb p,
+          .adjective p,
+          .personal-pronoun p {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            padding-top: 10px;
+          }
+
+          .emoji {
+            display: block;
+            font-size: 70px;
+            margin-top: -30px;
+          }
+
+          .keterangan {
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            color: rgb(245, 245, 235);
+            font-size: 17px;
+          }
+
+          @media (max-width: 600px) {
+            .noun,
+            .verb,
+            .adjective,
+            .personal-pronoun {
+              width: 125px;
+              height: 125px;
+            }
+
+            .container {
+              width: 300px;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <!-- <div class="container"> -->
+        <div class="materi">
+          <div class="profil"><a href="profil-pengembang/index.html" target="_blank">PROFIL PENGEMBANG</a></div>
+        </div>
+        <!-- <div class="tombol">
+        <a href="../kata-benda/animal/index.html">Start Game</a>
+      </div> -->
+
+        <div class="container">
+          <a href="kata-benda/kata-benda1/preface.html" target="_blank">
+            <div class="noun">
+              <p>NOUN</p>
+              <p class="emoji">💻</p>
+              <p></p>
+            </div>
+          </a>
+
+          <a href="kata-kerja/kata-kerja1/preface.html" target="_blank">
+            <div class="verb">
+              <p>VERB</p>
+              <p class="emoji">🏅</p>
+            </div>
+          </a>
+
+          <a href="kata-sifat/kata-sifat1/preface.html" target="_blank">
+            <div class="adjective">
+              <p>ADJECTIVE</p>
+              <p class="emoji">✨</p>
+            </div>
+          </a>
+
+          <a href="tata-bahasa/tata-bahasa1/preface.html" target="_blank">
+            <div class="personal-pronoun">
+              <p>GRAMMAR</p>
+              <p class="emoji">🎖️</p>
+            </div>
+          </a>
+
+          <a href="intermediate/intermediate1/preface.html" target="_blank">
+            <div class="noun">
+              <p>INTERMEDIATE</p>
+              <p class="emoji">⭐</p>
+              <p></p>
+            </div>
+          </a>
+
+          <a href="tingkat-lanjutan/tingkat-lanjut1/preface.html" target="_blank">
+            <div class="noun">
+              <p>ADVANCE</p>
+              <p class="emoji">🏆</p>
+              <p></p>
+            </div>
+          </a>
+        </div>
+
+        <canvas id="canvas"> </canvas>
+
+        <script>
+          const canvas = document.getElementById("canvas");
+          const ctx = canvas.getContext("2d");
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          var canvasW = canvas.width;
+          var canvasH = canvas.height;
+
+          ctx.fillStyle = "red";
+          ctx.strokeStyle = "black";
+          ctx.lineWidth = 3;
+
+          //Fungsi acak warna
+
+          function getRandomColor() {
+            const leters = "0123456789ABCDEF";
+            let color = "#";
+            for (var i = 0; i < 6; i++) {
+              color += leters[Math.floor(Math.random() * 16)];
+            }
+
+            return color;
+          }
+
+          // Perbanyak kotak
+
+          let rects = [];
+          for (var i = 0; i < 100; i++) {
+            //Acak warna kotak
+            color = getRandomColor();
+
+            // Acak ukuran kotak
+            let width = Math.random() * 30;
+            let height = Math.random() * 30;
+
+            // Acak posisi kotak
+
+            let x = Math.random() * canvasW;
+            let y = Math.random() * canvasH;
+
+            let speedX = (Math.random() - 0.5) * 2;
+            let speedY = (Math.random() - 0.5) * 2;
+
+            rects.push({
+              x: x,
+              y: y,
+              width: width,
+              height: height,
+              fillColor: color,
+              strokeColor: color,
+              speedX: speedX,
+              speedY: speedY,
+            });
+          }
+
+          // Funsi menggambar kotak
+
+          function drawRect(x, y, width, height, fillColor, strokeColor) {
+            ctx.fillStyle = fillColor;
+            ctx.strokeStyle = strokeColor;
+            ctx.fillRect(x, y, width, height);
+            ctx.strokeRect(x, y, width, height);
+          }
+
+          // Fungsi animasi
+
+          function animate() {
+            ctx.clearRect(0, 0, canvasW, canvasH);
+
+            rects.forEach((rect) => {
+              drawRect(rect.x, rect.y, rect.width, rect.height, rect.fillColor, rect.strokeColor);
+
+              rect.x += rect.speedX;
+              rect.y += rect.speedY;
+
+              if (rect.x > canvasW || rect.x < 0) rect.speedX = -rect.speedX;
+
+              if (rect.y > canvasH || rect.y < 0) rect.speedY = -rect.speedY;
+            });
+
+            requestAnimationFrame(animate);
+          }
+
+          animate();
+        </script>
+      </body>
+    </html>
+  </body>
+</html>

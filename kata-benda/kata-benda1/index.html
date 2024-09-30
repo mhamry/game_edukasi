@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>level1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio class="congratulation">
+      <source src="../../sound/congratulation.mp3" />
+    </audio>
+
+    <audio class="sound-benar">
+      <source src="../../sound/aplause.mp3" />
+    </audio>
+
+    <audio class="backsound" loop>
+      <source src="../../sound/song1.mp3" />
+    </audio>
+
+    <audio class="sound-salah">
+      <source src="../../sound/salah.mp3" />
+    </audio>
+
+    <audio class="tryagain">
+      <source src="../../sound/tryagain.mp3" />
+    </audio>
+
+    <div class="tombol">
+      <div class="materi"><a href="materi.html" target="_blank">MATERI</a></div>
+    </div>
+
+    <div class="petunjuk">
+      <div class="materi"><a href="#" target="_blank">Clue</a></div>
+    </div>
+
+    <div class="e-book1">
+      <div class="materi"><a href="../../pdf/e-book1.pdf" target="_blank">E-book 1</a></div>
+    </div>
+
+    <div class="e-book2">
+      <div class="materi"><a href="../../pdf/e-book2.pdf" target="_blank">E-book 2</a></div>
+    </div>
+
+    <div class="e-book3">
+      <div class="materi"><a href="../../pdf/e-book3.pdf" target="_blank">E-book 3</a></div>
+    </div>
+
+    <div class="score-container">
+      <p>Score: <span class="user-score">0</span></p>
+    </div>
+
+    <center translate="no">
+      <h1>ANIMAL</h1>
+
+      <div
+        class="game 1"
+        data-alert="Jawaban yang benar adalah : DRAGONFLY
+      "
+      >
+        <div class="kotak">
+          <h3 class="jawaban">DRAGONFLY</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>CAPUNG</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/capung.png" alt="" width="400" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">DRAGONFLY</div>
+          <div class="choice">BUTTERFLY</div>
+          <div class="choice">ELEPHANT</div>
+          <div class="choice">HORSE</div>
+        </div>
+      </div>
+
+      <div class="game 2" data-alert="jawaban yang benar adalah: HEN">
+        <div class="kotak">
+          <h3 class="jawaban">HEN</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>INDUK AYAM</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/ayam.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">CAT</div>
+          <div class="choice">COW</div>
+          <div class="choice">DOG</div>
+          <div class="choice">HEN</div>
+        </div>
+      </div>
+
+      <div class="game 3" data-alert="Jawaban yang benar adalah : EAGLE">
+        <div class="kotak">
+          <h3 class="jawaban">EAGLE</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>ELANG</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/elang.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">BUFFALO</div>
+          <div class="choice">EAGLE</div>
+          <div class="choice">SNAKE</div>
+          <div class="choice">ANT</div>
+        </div>
+      </div>
+
+      <div class="game 4" data-alert="Jawaban yang benar adalah : TIGER">
+        <div class="kotak">
+          <h3 class="jawaban">TIGER</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>HARIMAU</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/harimau.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">TIGER</div>
+          <div class="choice">LION</div>
+          <div class="choice">RABBIT</div>
+          <div class="choice">BIRD</div>
+        </div>
+      </div>
+
+      <div class="game 5" data-alert="Jawaaban yang benar adalah : ELEPHANT">
+        <div class="kotak">
+          <h3 class="jawaban">ELEPHANT</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>GAJAH</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/gajah.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ELEPHANT</div>
+          <div class="choice">MONKEY</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">GIRRAFF</div>
+        </div>
+      </div>
+
+      <div class="game 6" data-alert="Jawaaban yang benar adalah : DUCK">
+        <div class="kotak">
+          <h3 class="jawaban">DUCK</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>BEBEK</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/itik.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">DUCK</div>
+          <div class="choice">CAT</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">GIRRAFF</div>
+        </div>
+      </div>
+
+      <div class="game 7" data-alert="Jawaaban yang benar adalah : GIRAFFE">
+        <div class="kotak">
+          <h3 class="jawaban">GIRAFFE</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>JERAPAH</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/jerapah.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">GIRAFFE</div>
+          <div class="choice">MONKEY</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">GIRRAFF</div>
+        </div>
+      </div>
+
+      <div class="game 8" data-alert="Jawaaban yang benar adalah : BUTTERFLY">
+        <div class="kotak">
+          <h3 class="jawaban">BUTTERFLY</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>KUPU KUPU</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/kupu.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">BUTTERFLY</div>
+          <div class="choice">MONKEY</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">GIRRAFF</div>
+        </div>
+      </div>
+
+      <div class="game 9" data-alert="Jawaaban yang benar adalah : DEER">
+        <div class="kotak">
+          <h3 class="jawaban">DEER</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>RUSA</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/rusa.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ELEPHNAT</div>
+          <div class="choice">MONKEY</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">DEER</div>
+        </div>
+      </div>
+
+      <div class="game 10" data-alert="Jawaaban yang benar adalah : BUFFALO">
+        <div class="kotak">
+          <h3 class="jawaban">BUFFALO</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>KERBAU</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/kerbau.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">BUFFALO</div>
+          <div class="choice">MONKEY</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">GIRRAFF</div>
+        </div>
+      </div>
+
+      <div class="game 11" data-alert="Jawaaban yang benar adalah : COCK">
+        <div class="kotak">
+          <h3 class="jawaban">COCK</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>AYAAM JANTAN</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/ayamjago.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ELEPHNAT</div>
+          <div class="choice">MONKEY</div>
+          <div class="choice">COCK</div>
+          <div class="choice">GIRRAFF</div>
+        </div>
+      </div>
+
+      <div class="game 12" data-alert="Jawaaban yang benar adalah : MOUSEDEER">
+        <div class="kotak">
+          <h3 class="jawaban">MOUSEDEER</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>KANCIL</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/kancil.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ELEPHNAT</div>
+          <div class="choice">MOUSEDEER</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">GIRRAFF</div>
+        </div>
+      </div>
+
+      <div class="game 13" data-alert="Jawaaban yang benar adalah : GOAT">
+        <div class="kotak">
+          <h3 class="jawaban">GOAT</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>KAMBING</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/kambing.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">GOAT</div>
+          <div class="choice">MONKEY</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">GIRRAFF</div>
+        </div>
+      </div>
+
+      <div class="game 14" data-alert="Jawaaban yang benar adalah : LION">
+        <div class="kotak">
+          <h3 class="jawaban">LION</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>SINGA</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/singa.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ELEPHNAT</div>
+          <div class="choice">LION</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">GIRRAFF</div>
+        </div>
+      </div>
+
+      <div class="game 15" data-alert="Jawaaban yang benar adalah : ANT">
+        <div class="kotak">
+          <h3 class="jawaban">ANT</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>SEMUT</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/semut.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ANT</div>
+          <div class="choice">MONKEY</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">GIRRAFF</div>
+        </div>
+      </div>
+
+      <div class="game 16" data-alert="Jawaaban yang benar adalah : CROCODILE">
+        <div class="kotak">
+          <h3 class="jawaban">CROCODILE</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>BUAYA</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/buaya.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ELEPHNAT</div>
+          <div class="choice">MONKEY</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">CROCODILE</div>
+        </div>
+      </div>
+
+      <div class="game 17" data-alert="Jawaaban yang benar adalah : BERUANG">
+        <div class="kotak">
+          <h3 class="jawaban">BEAR</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>BERUANG</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/beruang.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">BEAR</div>
+          <div class="choice">MONKEY</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">GIRRAFF</div>
+        </div>
+      </div>
+
+      <div class="game 18" data-alert="Jawaaban yang benar adalah : MONKEY">
+        <div class="kotak">
+          <h3 class="jawaban">MONKEY</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>MONYET</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/monyet.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ELEPHNAT</div>
+          <div class="choice">MONKEY</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">GIRRAFF</div>
+        </div>
+      </div>
+
+      <div class="game 19" data-alert="Jawaaban yang benar adalah : SNAKE">
+        <div class="kotak">
+          <h3 class="jawaban">SNAKE</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>ULAR</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/ular.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ANT</div>
+          <div class="choice">MONKEY</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">SNAKE</div>
+        </div>
+      </div>
+
+      <div class="game 20" data-alert="Jawaaban yang benar adalah : RABBIT">
+        <div class="kotak">
+          <h3 class="jawaban">RABBIT</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>KELINCI</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/hewan.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">RABBIT</div>
+          <div class="choice">MONKEY</div>
+          <div class="choice">GOAT</div>
+          <div class="choice">GIRRAFF</div>
+        </div>
+      </div>
+    </center>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>

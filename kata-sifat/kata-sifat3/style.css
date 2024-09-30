@@ -1,0 +1,394 @@
+body {
+  overflow-y: hidden;
+}
+
+h1 {
+  margin-top: -5px;
+}
+
+.kotak {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.jawaban {
+  margin-top: 300px;
+}
+
+.text {
+  position: absolute;
+  background-color: black;
+  width: 400px;
+  height: 200px;
+  color: antiquewhite;
+  display: flex;
+  line-height: 100px;
+  justify-content: center;
+  transition: 1s;
+  z-index: 9;
+}
+
+.image {
+  width: 400px;
+  height: 200px;
+  margin-top: 200px;
+  position: absolute;
+  transition: 1s;
+}
+
+.choice {
+  width: 400px;
+  height: 30px;
+  background-color: aqua;
+  margin-top: 3px;
+  padding-left: 10px;
+  display: flex;
+  line-height: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.game {
+  margin-top: -3px;
+  transition: 2s;
+}
+
+.alert-betul {
+  width: 400px;
+  height: 200px;
+  margin-top: 200px;
+  background-image: url(../../gif/background.gif);
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.5;
+  display: none;
+}
+
+.alert-salah {
+  width: 400px;
+  height: 200px;
+  margin-top: 200px;
+  background-image: url(../../gif/kecewa3.gif);
+  box-sizing: border-box;
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.5;
+  display: none;
+}
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  background-color: grey;
+}
+
+@keyframes tombol {
+  0% {
+    background-image: linear-gradient(green, purple);
+  }
+
+  25% {
+    background-image: linear-gradient(yellow, rgb(0, 7, 100));
+  }
+
+  50% {
+    background-image: linear-gradient(rgb(241, 145, 145), rgb(61, 61, 218));
+  }
+  75% {
+    background-image: linear-gradient(grey, rgb(233, 11, 48));
+  }
+
+  100% {
+    background-image: linear-gradient(rgb(250, 114, 148), rgb(12, 245, 226));
+  }
+}
+
+.materi {
+  text-align: center;
+  margin: auto;
+}
+.materi a {
+  text-decoration: none;
+  color: rgb(243, 233, 233);
+}
+
+.tombol {
+  margin-left: 125px;
+  position: absolute;
+  top: 30px;
+  height: 50px;
+  width: 130px;
+  border-radius: 8px;
+  display: flex;
+  background-color: rgb(4, 123, 228);
+  /* animation: tombol 2s ease-in-out infinite; */
+}
+
+.petunjuk {
+  margin-left: 125px;
+  position: absolute;
+  top: 100px;
+  height: 50px;
+  width: 130px;
+  border-radius: 8px;
+  display: flex;
+  background-color: rgb(1, 14, 0);
+}
+
+.e-book1 {
+  margin-left: 125px;
+  position: absolute;
+  top: 170px;
+  height: 50px;
+  width: 130px;
+  border-radius: 8px;
+  display: flex;
+  background-color: rgb(221, 10, 140);
+}
+
+.e-book2 {
+  margin-left: 125px;
+  position: absolute;
+  top: 240px;
+  height: 50px;
+  width: 130px;
+  border-radius: 8px;
+  display: flex;
+  background-color: rgb(245, 10, 171);
+}
+
+.e-book3 {
+  margin-left: 125px;
+  position: absolute;
+  top: 310px;
+  height: 50px;
+  width: 130px;
+  border-radius: 8px;
+  display: flex;
+  background-color: rgb(10, 14, 245);
+}
+
+.score-container {
+  margin-left: 125px;
+  position: absolute;
+  top: 380px;
+  height: 50px;
+  width: 130px;
+  border-radius: 8px;
+  display: flex;
+  background-color: rgb(224, 234, 224);
+}
+
+.tombol:hover {
+  transform: scale(1.2);
+}
+
+.petunjuk:hover {
+  transform: scale(1.2);
+}
+
+.e-book1:hover {
+  transform: scale(1.2);
+}
+
+.e-book2:hover {
+  transform: scale(1.2);
+}
+
+.e-book3:hover {
+  transform: scale(1.2);
+}
+.score-container p {
+  margin: auto;
+  text-align: center;
+  font-size: small;
+}
+
+.user-score {
+  font-size: large;
+}
+
+.score-container {
+  /* display: inline-block; */
+  background-color: lightblue;
+  border: 2px solid blue;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Animasi bergoyang */
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-5px, 0);
+  }
+  50% {
+    transform: translate(5px, 0);
+  }
+  75% {
+    transform: translate(-5px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Efek bergoyang saat hover */
+.score-container:hover {
+  animation: shake 0.3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.shake {
+  animation: shake 1.5s infinite;
+}
+@media (max-width: 600px) {
+  .choice,
+  .kotak,
+  .text {
+    width: 300px;
+  }
+
+  .image {
+    width: 300px;
+    margin-top: 200px;
+    position: absolute;
+    transition: 1s;
+  }
+  .image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .alert-betul {
+    width: 300px;
+    height: 200px;
+    margin-top: 200px;
+    background-image: url(../../gif/background.gif);
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.5;
+    display: none;
+  }
+
+  .alert-salah {
+    width: 300px;
+    height: 200px;
+    margin-top: 200px;
+    background-image: url(../../gif/kecewa3.gif);
+    box-sizing: border-box;
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.5;
+    display: none;
+  }
+
+  .tombol {
+    margin-left: 5px;
+    z-index: 999;
+    opacity: 0.8;
+    position: absolute;
+    top: 13px;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    background-color: rgb(7, 118, 214);
+    /* animation: tombol 2s ease-in-out infinite; */
+    font-size: smaller;
+  }
+
+  .petunjuk {
+    margin-left: 5px;
+    z-index: 999;
+    opacity: 0.8;
+    position: absolute;
+    top: 53px;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    background-color: rgb(235, 8, 4);
+    font-size: smaller;
+  }
+
+  .e-book1 {
+    margin-left: 5px;
+    z-index: 999;
+    opacity: 0.8;
+    position: absolute;
+    top: 93px;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    background-color: rgb(4, 16, 0);
+    font-size: smaller;
+  }
+
+  .e-book2 {
+    margin-left: 5px;
+    z-index: 999;
+    opacity: 0.8;
+    position: absolute;
+    top: 133px;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    background-color: rgb(235, 12, 194);
+    font-size: smaller;
+  }
+
+  .e-book3 {
+    margin-left: 5px;
+    z-index: 999;
+    opacity: 0.8;
+    position: absolute;
+    top: 173px;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    background-color: rgb(8, 18, 218);
+    font-size: smaller;
+  }
+
+  .score-container {
+    margin-left: 5px;
+    z-index: 999;
+    opacity: 0.8;
+    position: absolute;
+    top: 213px;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    background-color: rgb(250, 246, 246);
+    font-size: smaller;
+  }
+  .score-container p {
+    margin: auto;
+    text-align: center;
+    font-size: small;
+  }
+
+  .user-score {
+    font-size: small;
+  }
+}

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>level2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio class="congratulation"></audio>
+      <source src="../../sound/congratulation.mp3" />
+    </audio>
+
+
+    <audio class="sound-benar">
+      <source src="../../sound/aplause.mp3" />
+    </audio>
+
+    <audio class="sound-salah">
+      <source src="../../sound/salah.mp3" />
+    </audio>
+
+    
+    <audio class="backsound" loop>
+      <source src="../../sound/song1.mp3" />
+    </audio>
+
+    <div class="tombol">
+      <div class="materi"><a href="materi.html" target="_blank">MATERI</a></div>
+    </div>
+
+    <div class="petunjuk">
+      <div class="materi"><a href="#" target="_blank">Clue</a></div>
+    </div>
+
+    <div class="e-book1">
+      <div class="materi"><a href="../../pdf/e-book1.pdf" target="_blank">E-book 1</a></div>
+    </div>
+
+    <div class="e-book2">
+      <div class="materi"><a href="../../pdf/e-book2.pdf" target="_blank">E-book 2</a></div>
+    </div>
+
+    <div class="e-book3">
+      <div class="materi"><a href="../../pdf/e-book3.pdf" target="_blank">E-book 3</a></div>
+    </div>
+
+    <div class="score-container">
+      <p>Score: <span class="user-score">0</span></p>
+    </div>
+
+    <h1>VEGATABLE</h1>
+    <center translate="no">
+      <div class="game 1" data-alert="Jawaban yang benar adalah : EGGPLANT">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">TERONG</h2>
+            <img src="../../image/noun/eggplant.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">EGGPLANT</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">EGGPLANT</div>
+          <div class="choice">CHAYOTE</div>
+          <div class="choice">LONG BEANS</div>
+          <div class="choice">BEANS</div>
+        </div>
+      </div>
+
+      <div class="game 2" data-alert="Jawaban yang benar adalah : CABAGE">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">KOL</h2>
+            <img src="../../image/noun/cabage.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">CABAGE</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">ONION</div>
+          <div class="choice">CHILI</div>
+          <div class="choice">TOMATO</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+
+       <div class="game 3" data-alert="Jawaban yang benar adalah : BEANS">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">BUNCIS</h2>
+            <img src="../../image/noun/bean.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">BEANS</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">BEANS</div>
+          <div class="choice">GARLIC</div>
+          <div class="choice">LEEKS</div>
+          <div class="choice">SPINACH</div>
+        </div>
+      </div>
+
+      <div class="game 4" data-alert="Jawaban yang benar adalah : ONION">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">BAWANG MERAH</h2>
+            <img src="../../image/noun/onion.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">ONION</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">CUCUMBER</div>
+          <div class="choice">CELERY</div>
+          <div class="choice">POTATO</div>
+          <div class="choice">ONION</div>
+        </div>
+      </div>
+
+      <div class="game 5" data-alert="Jawaban yang benar adalah : POTATO">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">KENTANG</h2>
+            <img src="../../image/noun/potato.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">POTATO</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">TOMATO</div>
+          <div class="choice">POTATO</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+
+      <div class="game 6" data-alert="Jawaban yang benar adalah : CHILI">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">CABE</h2>
+            <img src="../../image/noun/chili.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">CHILI</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">CHILI</div>
+          <div class="choice">POTATO</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+
+      <div class="game 7" data-alert="Jawaban yang benar adalah : BITTER MELON">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">PARE</h2>
+            <img src="../../image/noun/biitermelon.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">BITTER MELON</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">TOMATO</div>
+          <div class="choice">POTATO</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">BITTER MELON</div>
+        </div>
+      </div>
+
+      <div class="game 8" data-alert="Jawaban yang benar adalah : CHAYOTE">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">LABU SIAM</h2>
+            <img src="../../image/noun/chayote.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">CHAYOTE</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">CHAYOTE</div>
+          <div class="choice">POTATO</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+
+      <div class="game 9" data-alert="Jawaban yang benar adalah : SPINACH">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">BAYAM</h2>
+            <img src="../../image/noun/spinach.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">SPINACH</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">SPINACH</div>
+          <div class="choice">POTATO</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+
+      <div class="game 10" data-alert="Jawaban yang benar adalah : GINGER">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">JAHE</h2>
+            <img src="../../image/noun/ginger.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">GINGER</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">TOMATO</div>
+          <div class="choice">POTATO</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">GINGER</div>
+        </div>
+      </div>
+
+      <div class="game 11" data-alert="Jawaban yang benar adalah : TURMERIC">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">KUNYIT</h2>
+            <img src="../../image/noun/turmeric.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">TURMERIC</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">TURMERIC</div>
+          <div class="choice">GARLIC</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+
+      <div class="game 12" data-alert="Jawaban yang benar adalah : TOMATO">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">TOMAT</h2>
+            <img src="../../image/noun/tomato.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">TOMATO</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">TOMATO</div>
+          <div class="choice">POTATO</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+
+      <div class="game 13" data-alert="Jawaban yang benar adalah : CARROT">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">WORTEL</h2>
+            <img src="../../image/noun/carrot.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">CARROT</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">TOMATO</div>
+          <div class="choice">CARROT</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+
+      <div class="game 14" data-alert="Jawaban yang benar adalah : PEPPER">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MERICA</h2>
+            <img src="../../image/noun/pepper.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">PEPPER</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">CARROT</div>
+          <div class="choice">POTATO</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+
+      <div class="game 15" data-alert="Jawaban yang benar adalah : LONG BEANS">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">KACANG PANJANG</h2>
+            <img src="../../image/noun/longbean.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">LONG BEANS</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">TOMATO</div>
+          <div class="choice">POTATO</div>
+          <div class="choice">LONG BEANS</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+
+      <div class="game 16" data-alert="Jawaban yang benar adalah : CELERY">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">SELEDRI</h2>
+            <img src="../../image/noun/celeri.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">CELERY</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">TOMATO</div>
+          <div class="choice">CELERY</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+
+      <div class="game 17" data-alert="Jawaban yang benar adalah : PAPRICA">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">PAPRIKA</h2>
+            <img src="../../image/noun/paprica.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">PAPRICA</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">PAPRICA</div>
+          <div class="choice">POTATO</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+
+      <div class="game 18" data-alert="Jawaban yang benar adalah : LEEKS">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">BAWANG PREI</h2>
+            <img src="../../image/noun/leeks.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">LEEKS</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">CHILI</div>
+          <div class="choice">POTATO</div>
+          <div class="choice">LEEKS</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+
+      <div class="game 19" data-alert="Jawaban yang benar adalah : CUCMBER">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">MENTIMUN</h2>
+            <img src="../../image/noun/cucmber.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">CUCUMBER</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">TOMATO</div>
+          <div class="choice">CUCUMBER</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">SPINACH</div>
+        </div>
+      </div>
+
+      <div class="game 20" data-alert="Jawaban yang benar adalah : GARLIC">
+        <div class="flipcard">
+          <div class="flip-front">
+            <h2 class="pertanyaan">BAWANG PUTIH</h2>
+            <img src="../../image/noun/garlic.png" alt="" />
+          </div>
+          <div class="flip-back">
+            <h1 class="jawaban">GARLIC</h1>
+            <div class="alert-betul"></div>
+            <div class="alert-salah"></div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="choice">LEEKS</div>
+          <div class="choice">GARLIC</div>
+          <div class="choice">PEPPER</div>
+          <div class="choice">CABAGE</div>
+        </div>
+      </div>
+    </center>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>

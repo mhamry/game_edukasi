@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>level1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio class="sound-benar">
+      <source src="../../sound/aplause.mp3" />
+    </audio>
+
+    <audio class="sound-salah">
+      <source src="../../sound/salah.mp3" />
+    </audio>
+
+    <audio class="tryagain">
+      <source src="../../sound/tryagain.mp3" />
+    </audio>
+
+    <audio class="backsound" loop>
+      <source src="../../sound/song1.mp3" />
+    </audio>
+
+    <div class="tombol">
+      <div class="materi"><a href="materi.html" target="_blank">MATERI</a></div>
+    </div>
+
+    <div class="petunjuk">
+      <div class="materi"><a href="#" target="_blank">Clue</a></div>
+    </div>
+
+    <div class="e-book1">
+      <div class="materi"><a href="../../pdf/e-book1.pdf" target="_blank">E-book 1</a></div>
+    </div>
+
+    <div class="e-book2">
+      <div class="materi"><a href="../../pdf/e-book2.pdf" target="_blank">E-book 2</a></div>
+    </div>
+
+    <div class="e-book3">
+      <div class="materi"><a href="../../pdf/e-book3.pdf" target="_blank">E-book 3</a></div>
+    </div>
+
+    <div class="score-container">
+      <p>Score: <span class="user-score">0</span></p>
+    </div>
+
+    <center translate="no">
+      <h1>ADJECTIVE</h1>
+
+      <div
+        class="game 1"
+        data-alert="Jawaban yang benar adalah : TERIBLE
+      "
+      >
+        <div class="kotak">
+          <h3 class="jawaban">TERIBLE</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>MENGERIKAN</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/terible.png" alt="" width="400" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">POSIBLE</div>
+          <div class="choice">LAZY</div>
+          <div class="choice">TERIBLE</div>
+          <div class="choice">CRAZY</div>
+        </div>
+      </div>
+
+      <div class="game 2" data-alert="jawaban yang benar adalah: SWEET">
+        <div class="kotak">
+          <h3 class="jawaban">SWEET</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>MANIS</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/sweet.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">SOUR</div>
+          <div class="choice">SWEET</div>
+          <div class="choice">FUNNY</div>
+          <div class="choice">BITTER</div>
+        </div>
+      </div>
+
+      <div class="game 3" data-alert="Jawaban yang benar adalah : BITTER">
+        <div class="kotak">
+          <h3 class="jawaban">BITTER</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PAHIT</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/bitter.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">SOUR</div>
+          <div class="choice">SWEET</div>
+          <div class="choice">BITTER</div>
+          <div class="choice">EASY</div>
+        </div>
+      </div>
+
+      <div class="game 4" data-alert="Jawaban yang benar adalah : SOUR">
+        <div class="kotak">
+          <h3 class="jawaban">SOUR</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>ASAM</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/sour.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">NICE</div>
+          <div class="choice">SOUR</div>
+          <div class="choice">DIFFICULT</div>
+          <div class="choice">WONDERFUL</div>
+        </div>
+      </div>
+
+      <div class="game 5" data-alert="Jawaaban yang benar adalah : LIGHT">
+        <div class="kotak">
+          <h3 class="jawaban">LIGHT</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>RINGAN</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/light.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">KIND</div>
+          <div class="choice">LIGHT</div>
+          <div class="choice">NEAR</div>
+          <div class="choice">FAR</div>
+        </div>
+      </div>
+
+      <div class="game 6" data-alert="Jawaaban yang benar adalah : HEAVY">
+        <div class="kotak">
+          <h3 class="jawaban">HEAVY</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>BERAT</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/heavy.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">HEAVY</div>
+          <div class="choice">CHEAP</div>
+          <div class="choice">LUXIRIOUS</div>
+          <div class="choice">GENEROUS</div>
+        </div>
+      </div>
+
+      <div class="game 7" data-alert="Jawaaban yang benar adalah : DARK">
+        <div class="kotak">
+          <h3 class="jawaban">DARK</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>GELAP</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/dark.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">NEAR</div>
+          <div class="choice">DARK</div>
+          <div class="choice">INTERESTING</div>
+          <div class="choice">EXPENSIVE</div>
+        </div>
+      </div>
+
+      <div class="game 8" data-alert="Jawaaban yang benar adalah : BRIGHT">
+        <div class="kotak">
+          <h3 class="jawaban">BRIGHT</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>TERANG</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/bright.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">DELICIOUS</div>
+          <div class="choice">GENEROUS</div>
+          <div class="choice">BRIGHT</div>
+          <div class="choice">NERVOUS</div>
+        </div>
+      </div>
+
+      <div class="game 9" data-alert="Jawaaban yang benar adalah : HEALTHY">
+        <div class="kotak">
+          <h3 class="jawaban">HEALTHY</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>SEHAT</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/healthy.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">GOOD</div>
+          <div class="choice">HEALTHY</div>
+          <div class="choice">OLD</div>
+          <div class="choice">YOUNG</div>
+        </div>
+      </div>
+
+      <div class="game 10" data-alert="Jawaaban yang benar adalah : SICK">
+        <div class="kotak">
+          <h3 class="jawaban">SICK</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>SAKIT</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/sick.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">SICK</div>
+          <div class="choice">BAD</div>
+          <div class="choice">NICE</div>
+          <div class="choice">WORSE</div>
+        </div>
+      </div>
+
+      <div class="game 11" data-alert="Jawaaban yang benar adalah : INTERESTED">
+        <div class="kotak">
+          <h3 class="jawaban">INTERESTED</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>TERTARIK</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/interested.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ANGRY</div>
+          <div class="choice">IMPORTANT</div>
+          <div class="choice">EMPTY</div>
+          <div class="choice">INTERESTED</div>
+        </div>
+      </div>
+
+      <div class="game 12" data-alert="Jawaaban yang benar adalah : FAMOUS">
+        <div class="kotak">
+          <h3 class="jawaban">FAMOUS</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>TERKENAL</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/famous.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">FAMOUS</div>
+          <div class="choice">LARGE</div>
+          <div class="choice">BIG</div>
+          <div class="choice">SMALL</div>
+        </div>
+      </div>
+
+      <div class="game 13" data-alert="Jawaaban yang benar adalah : GENEROUS">
+        <div class="kotak">
+          <h3 class="jawaban">GENEROUS</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>DERMAWAN</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/generous.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">JELOUS</div>
+          <div class="choice">SMALL</div>
+          <div class="choice">TALL</div>
+          <div class="choice">GENEROUS</div>
+        </div>
+      </div>
+
+      <div class="game 14" data-alert="Jawaaban yang benar adalah : DICIPLINE">
+        <div class="kotak">
+          <h3 class="jawaban">DICIPLINE</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>DISPLIN</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/dicipline.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">ANGRY</div>
+          <div class="choice">DICIPLINE</div>
+          <div class="choice">CROWDED</div>
+          <div class="choice">POOR</div>
+        </div>
+      </div>
+
+      <div class="game 15" data-alert="Jawaaban yang benar adalah : LATE">
+        <div class="kotak">
+          <h3 class="jawaban">LATE</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>TERLAMBAT</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/late.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">LATE</div>
+          <div class="choice">BORING</div>
+          <div class="choice">FAT</div>
+          <div class="choice">ANNOYING</div>
+        </div>
+      </div>
+
+      <div class="game 16" data-alert="Jawaaban yang benar adalah : PATIENT">
+        <div class="kotak">
+          <h3 class="jawaban">PATIENT</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>SABAR</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/patient.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">PATIENT</div>
+          <div class="choice">INTERESTED</div>
+          <div class="choice">KIND</div>
+          <div class="choice">AMAZED</div>
+        </div>
+      </div>
+
+      <div class="game 17" data-alert="Jawaaban yang benar adalah : CONFUSED">
+        <div class="kotak">
+          <h3 class="jawaban">CONFUSED</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>BINGUNG</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/comfused.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">SLEEPY</div>
+          <div class="choice">CONFUSED</div>
+          <div class="choice">SQUEEZY</div>
+          <div class="choice">AIRY</div>
+        </div>
+      </div>
+
+      <div class="game 18" data-alert="Jawaaban yang benar adalah : DISSAPONTED">
+        <div class="kotak">
+          <h3 class="jawaban">DISSAPOINTED</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>KECEWA</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/sulit.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">DISSAPOINTED</div>
+          <div class="choice">BEAUTIFUL</div>
+          <div class="choice">DIFFICULT</div>
+          <div class="choice">INTERESTING</div>
+        </div>
+      </div>
+
+      <div class="game 19" data-alert="Jawaaban yang benar adalah : ANXIOUS">
+        <div class="kotak">
+          <h3 class="jawaban">ANXIOUS</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>CEMAS</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/anxious.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">NERVOUS</div>
+          <div class="choice">ANXIOUS</div>
+          <div class="choice">MARVELOUS</div>
+          <div class="choice">GENEROUS</div>
+        </div>
+      </div>
+
+      <div class="game 20" data-alert="Jawaaban yang benar adalah : IMPORTANT">
+        <div class="kotak">
+          <h3 class="jawaban">IMPORTANT</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PENTING</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/adjective/important.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">IMPORTANT</div>
+          <div class="choice">SATISFIED</div>
+          <div class="choice">DISSAPOINTED</div>
+          <div class="choice">FAIR</div>
+        </div>
+      </div>
+    </center>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>

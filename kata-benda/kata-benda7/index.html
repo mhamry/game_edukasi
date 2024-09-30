@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>level1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio class="sound-benar">
+      <source src="../../sound/aplause.mp3" />
+    </audio>
+
+    <audio class="sound-salah">
+      <source src="../../sound/salah.mp3" />
+    </audio>
+
+    <audio class="backsound" loop>
+      <source src="../../sound/song1.mp3" />
+    </audio>
+
+    <audio class="tryagain">
+      <source src="../../sound/tryagain.mp3" />
+    </audio>
+
+    <div class="tombol">
+      <div class="materi"><a href="materi.html" target="_blank">MATERI</a></div>
+    </div>
+
+    <div class="petunjuk">
+      <div class="materi"><a href="#" target="_blank">Clue</a></div>
+    </div>
+
+    <div class="e-book1">
+      <div class="materi"><a href="../../pdf/e-book1.pdf" target="_blank">E-book 1</a></div>
+    </div>
+
+    <div class="e-book2">
+      <div class="materi"><a href="../../pdf/e-book2.pdf" target="_blank">E-book 2</a></div>
+    </div>
+
+    <div class="e-book3">
+      <div class="materi"><a href="../../pdf/e-book3.pdf" target="_blank">E-book 3</a></div>
+    </div>
+
+    <div class="score-container">
+      <p>Score: <span class="user-score">0</span></p>
+    </div>
+
+    <center translate="no">
+      <h1>THINGS IN HOUSE</h1>
+
+      <div
+        class="game 1"
+        data-alert="Jawaban yang benar adalah : REFRIGERATOR
+      "
+      >
+        <div class="kotak">
+          <h3 class="jawaban">REFRIGERATOR</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>KULKAS</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/kulkas.png" alt="" width="400" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">TABLE</div>
+          <div class="choice">REFRIGERATOR</div>
+          <div class="choice">CHAIR</div>
+          <div class="choice">CUPBOARD</div>
+        </div>
+      </div>
+
+      <div class="game 2" data-alert="jawaban yang benar adalah: LAMP">
+        <div class="kotak">
+          <h3 class="jawaban">LAMP</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>LAMPU</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/lampu.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">BOOK</div>
+          <div class="choice">LAMP</div>
+          <div class="choice">FLOWER</div>
+          <div class="choice">DOOR</div>
+        </div>
+      </div>
+
+      <div class="game 3" data-alert="Jawaban yang benar adalah : DOOR">
+        <div class="kotak">
+          <h3 class="jawaban">DOOR</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PINTU</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/pintu.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">DOOR</div>
+          <div class="choice">WINDOW</div>
+          <div class="choice">CUP</div>
+          <div class="choice">GLASS</div>
+        </div>
+      </div>
+
+      <div class="game 4" data-alert="Jawaban yang benar adalah : CHAIR">
+        <div class="kotak">
+          <h3 class="jawaban">CHAIR</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>KURSI</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/kursi.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">TABLE</div>
+          <div class="choice">CHAIR</div>
+          <div class="choice">CUPBOARD</div>
+          <div class="choice">WINDOW</div>
+        </div>
+      </div>
+
+      <div class="game 5" data-alert="Jawaaban yang benar adalah : COMB">
+        <div class="kotak">
+          <h3 class="jawaban">COMB</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>SISIR</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/sisir.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">BAG</div>
+          <div class="choice">COMB</div>
+          <div class="choice">TABLE</div>
+          <div class="choice">CUP</div>
+        </div>
+      </div>
+
+      <div class="game 6" data-alert="Jawaaban yang benar adalah : WINDOW">
+        <div class="kotak">
+          <h3 class="jawaban">WINDOW</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>JENDELA</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/jendela.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">DOOR</div>
+          <div class="choice">FLOOR</div>
+          <div class="choice">WINDOW</div>
+          <div class="choice">LAMP</div>
+        </div>
+      </div>
+
+      <div class="game 7" data-alert="Jawaaban yang benar adalah : PLATE">
+        <div class="kotak">
+          <h3 class="jawaban">PLATE</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PIRING</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/piring.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">PLATE</div>
+          <div class="choice">CUP</div>
+          <div class="choice">BOWL</div>
+          <div class="choice">SPOON</div>
+        </div>
+      </div>
+
+      <div class="game 8" data-alert="Jawaaban yang benar adalah : FORK">
+        <div class="kotak">
+          <h3 class="jawaban">FORK</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>GARPU</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/garpu.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">FORK</div>
+          <div class="choice">SPOON</div>
+          <div class="choice">PLATE</div>
+          <div class="choice">KNIFE</div>
+        </div>
+      </div>
+
+      <div class="game 9" data-alert="Jawaaban yang benar adalah : SPOON">
+        <div class="kotak">
+          <h3 class="jawaban">SPOON</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>SENDOK</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/sendok.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">SPOON</div>
+          <div class="choice">SLIPPERS</div>
+          <div class="choice">BLANKET</div>
+          <div class="choice">FLOWER</div>
+        </div>
+      </div>
+
+      <div class="game 10" data-alert="Jawaaban yang benar adalah : KNIFE">
+        <div class="kotak">
+          <h3 class="jawaban">KNIFE</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>PISAU</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/pisau.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">KNIFE</div>
+          <div class="choice">BOWL</div>
+          <div class="choice">SPOON</div>
+          <div class="choice">SLIPPERS</div>
+        </div>
+      </div>
+
+      <div class="game 11" data-alert="Jawaaban yang benar adalah : BLANKET">
+        <div class="kotak">
+          <h3 class="jawaban">BLANKET</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>SELIMUT</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/selimut.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">BLANKET</div>
+          <div class="choice">SLIPPERS</div>
+          <div class="choice">BOWL</div>
+          <div class="choice">BOOK</div>
+        </div>
+      </div>
+
+      <div class="game 12" data-alert="Jawaaban yang benar adalah : BOWL">
+        <div class="kotak">
+          <h3 class="jawaban">BOWL</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>MANGKOK</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/mangkok.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">BOWL</div>
+          <div class="choice">PLATE</div>
+          <div class="choice">SPOON</div>
+          <div class="choice">RICE COOKER</div>
+        </div>
+      </div>
+
+      <div class="game 13" data-alert="Jawaaban yang benar adalah : JACKET">
+        <div class="kotak">
+          <h3 class="jawaban">JACKET</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>JEKET</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/jaket.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">JACKET</div>
+          <div class="choice">FLOWER</div>
+          <div class="choice">CHAIR</div>
+          <div class="choice">REFRIGERATOR</div>
+        </div>
+      </div>
+
+      <div class="game 14" data-alert="Jawaaban yang benar adalah : PILLOW">
+        <div class="kotak">
+          <h3 class="jawaban">PILLOW</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>BANTAL</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/bantal.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">PILLOW</div>
+          <div class="choice">BLANKET</div>
+          <div class="choice">TOWEL</div>
+          <div class="choice">FLOOR</div>
+        </div>
+      </div>
+
+      <div class="game 15" data-alert="Jawaaban yang benar adalah : KETTLE">
+        <div class="kotak">
+          <h3 class="jawaban">KETTLE</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>TEKO</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/teko.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">BED</div>
+          <div class="choice">FAN</div>
+          <div class="choice">KETTLE</div>
+          <div class="choice">GLASS</div>
+        </div>
+      </div>
+
+      <div class="game 16" data-alert="Jawaaban yang benar adalah : BED">
+        <div class="kotak">
+          <h3 class="jawaban">BED</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>TEMPAT TIDUR</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/tempattidur.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">BED</div>
+          <div class="choice">MATRAS</div>
+          <div class="choice">TELEVISION</div>
+          <div class="choice">STOVE</div>
+        </div>
+      </div>
+
+      <div class="game 17" data-alert="Jawaaban yang benar adalah : GLASS">
+        <div class="kotak">
+          <h3 class="jawaban">GLASS</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>GELAS</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/gelas.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">GLASS</div>
+          <div class="choice">CUP</div>
+          <div class="choice">PLATE</div>
+          <div class="choice">BAG</div>
+        </div>
+      </div>
+
+      <div class="game 18" data-alert="Jawaaban yang benar adalah : CUP">
+        <div class="kotak">
+          <h3 class="jawaban">CUP</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>CANGKIR</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/cangkir.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">GLASS</div>
+          <div class="choice">BAG</div>
+          <div class="choice">BOOK</div>
+          <div class="choice">CUP</div>
+        </div>
+      </div>
+
+      <div class="game 19" data-alert="Jawaaban yang benar adalah : FAN">
+        <div class="kotak">
+          <h3 class="jawaban">FAN</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>KIPAS ANGIN</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/kipas.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">FAN</div>
+          <div class="choice">BALL</div>
+          <div class="choice">COMPUTER</div>
+          <div class="choice">PEN</div>
+        </div>
+      </div>
+
+      <div class="game 20" data-alert="Jawaaban yang benar adalah : BASKET">
+        <div class="kotak">
+          <h3 class="jawaban">BASKET</h3>
+          <div class="alert-betul"></div>
+          <div class="alert-salah"></div>
+          <div class="text">
+            <h3>KERANJANG</h3>
+          </div>
+          <div class="image">
+            <img src="../../image/noun/keranjang.png" alt="" width="" height="200" />
+          </div>
+        </div>
+
+        <div class="answer">
+          <div class="choice">BASKET</div>
+          <div class="choice">BAG</div>
+          <div class="choice">GLOBE</div>
+          <div class="choice">ERASER</div>
+        </div>
+      </div>
+    </center>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>
