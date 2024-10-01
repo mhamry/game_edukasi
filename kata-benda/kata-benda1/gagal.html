@@ -83,6 +83,13 @@
       nextLevel.addEventListener("click", function () {
         localStorage.clear();
       });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const congratulation = document.querySelector(".sorry");
+        if (congratulation) {
+          congratulation.play();
+        }
+      });
     </script>
   </body>
 </html>
