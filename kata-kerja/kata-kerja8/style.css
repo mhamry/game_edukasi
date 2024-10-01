@@ -391,10 +391,10 @@ button {
     width: 300px;
     font-size: 20px;
     display: block;
-    padding: 8px;
+    padding: 10px;
     box-sizing: border-box;
     border-radius: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     text-align: center;
   }
 
