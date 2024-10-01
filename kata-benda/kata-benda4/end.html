@@ -166,6 +166,13 @@
       }
 
       animate();
+
+      document.addEventListener("DOMContentLoaded",function(){
+        const congratulation = document.querySelector(".congratulation");
+        if(congratulation){
+          congratulation.play();
+        }
+      })
       </script>
     
 </body>
