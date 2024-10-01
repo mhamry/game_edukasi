@@ -14,7 +14,7 @@ function updateScore(points) {
 }
 
 function checkFinalScore() {
-  if (userScore >= 800) {
+  if (userScore >= 900) {
     window.location.href = "end.html";
   } else {
     window.location.href = "gagal.html";

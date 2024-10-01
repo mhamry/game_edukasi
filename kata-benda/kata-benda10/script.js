@@ -233,7 +233,7 @@ function updateScore(points) {
 
 function checkFinalScore() {
   congratulation.pause();
-  if (userScore >= 800) {
+  if (userScore >= 900) {
     setTimeout(function () {
       congratulation.play();
       window.location.href = "end.html";
