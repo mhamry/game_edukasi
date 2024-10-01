@@ -320,6 +320,7 @@ h1 {
   .petunjuk {
     margin-left: 5px;
     position: absolute;
+    z-index: 999;
     top: 53px;
     height: 30px;
     width: 70px;
@@ -332,6 +333,7 @@ h1 {
   .e-book1 {
     margin-left: 5px;
     position: absolute;
+    z-index: 999;
     top: 93px;
     height: 30px;
     width: 70px;
@@ -344,6 +346,7 @@ h1 {
   .e-book2 {
     margin-left: 5px;
     position: absolute;
+    z-index: 999;
     top: 133px;
     height: 30px;
     width: 70px;
@@ -356,6 +359,7 @@ h1 {
   .e-book3 {
     margin-left: 5px;
     position: absolute;
+    z-index: 999;
     top: 173px;
     height: 30px;
     width: 70px;
@@ -368,6 +372,7 @@ h1 {
   .score-container {
     margin-left: 5px;
     position: absolute;
+    z-index: 999;
     top: 213px;
     height: 30px;
     width: 70px;
