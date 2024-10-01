@@ -64,6 +64,10 @@
 </head>
 <body>
 
+  <audio class="congratulation" autoplay>
+    <source src="../../sound/congratulation.mp3" />
+  </audio>
+
     <div class="end">
         <h1>CONGRATULATION</h1>
         <p>You have reached the required score to play on <P></P><span>level Two</span></p></h3>
@@ -162,6 +166,13 @@
       }
 
       animate();
+
+      document.addEventListener("DOMContentLoaded",function(){
+        const congratulation = document.querySelector(".congratulation");
+        if(congratulation){
+          congratulation.play();
+        }
+      })
       </script>
     
 </body>
