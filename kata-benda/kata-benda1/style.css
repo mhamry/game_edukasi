@@ -22,12 +22,12 @@ h1 {
 
 .text {
   position: absolute;
-  background-color: black;
+  background-color: rgb(224, 71, 255);
   width: 400px;
   height: 200px;
-  color: antiquewhite;
+  color: rgb(0, 0, 0);
   display: flex;
-  line-height: 100px;
+  line-height: 150px;
   justify-content: center;
   transition: 1s;
   z-index: 9;
@@ -396,6 +396,6 @@ h1 {
   }
 
   H1 {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
