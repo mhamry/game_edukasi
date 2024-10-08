@@ -22,7 +22,7 @@ h1 {
 
 .text {
   position: absolute;
-  background-color: rgb(224, 71, 255);
+  background-color: yellow;
   width: 400px;
   height: 200px;
   color: rgb(0, 0, 0);
