@@ -1,44 +1,79 @@
 body {
+  background-color: grey;
   overflow-y: hidden;
 }
 
 h1 {
-  margin-top: -5px;
+  margin: auto;
+  text-align: center;
 }
-
-.kotak {
+.game {
   width: 400px;
   height: 400px;
-  background-color: aqua;
+  border: 2px solid salmon;
+  perspective: 2000px;
+  transition: 2s;
+}
+
+.flipcard {
+  width: 100%;
+  height: 100%;
   position: relative;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  transform-style: preserve-3d;
+  transition: 2s;
+}
+
+/* .game:hover .flipcard {
+  transform: rotateY(180deg);
+} */
+
+.flip-front,
+.flip-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flip-front img {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  /* top: 0; */
+  bottom: 0;
+  left: 0;
+  z-index: -999;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
 }
 
 .jawaban {
-  margin-top: 200px;
+  position: absolute;
+  display: none;
 }
 
-.text {
-  position: absolute;
-  background-color: black;
+.alert-betul {
   width: 400px;
-  height: 200px;
-  color: antiquewhite;
-  display: flex;
-  line-height: 100px;
-  justify-content: center;
-  transition: 1s;
-  z-index: 9;
+  height: 400px;
+
+  background-image: url(../../gif/background.gif);
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  display: none;
 }
 
-.image {
+.alert-salah {
   width: 400px;
-  height: 200px;
-  margin-top: 200px;
-  position: absolute;
-  transition: 1s;
+  height: 400px;
+  background-image: url(../../gif/kecewa3.gif);
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  display: none;
 }
 
 .choice {
@@ -57,36 +92,17 @@ h1 {
 .answer {
   margin-top: 10px;
 }
-.game {
-  margin-top: -3px;
-  transition: 2s;
+
+.score-container p {
+  margin: auto;
+  text-align: center;
+  font-size: small;
 }
 
-.alert-betul {
-  width: 400px;
-  height: 200px;
-  margin-top: 100px;
-  background-image: url(../../gif/background.gif);
-  box-sizing: border-box;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  opacity: 0.5;
-  display: none;
+.user-score {
+  font-size: large;
 }
 
-.alert-salah {
-  width: 400px;
-  height: 200px;
-  margin-top: 100px;
-  background-image: url(../../gif/kecewa3.gif);
-  box-sizing: border-box;
-  background-position: top;
-  background-size: cover;
-  position: absolute;
-  opacity: 0.5;
-  display: none;
-}
 #canvas {
   position: absolute;
   width: 100%;
@@ -95,40 +111,6 @@ h1 {
   left: 0;
   z-index: -999;
   background-color: grey;
-}
-
-@keyframes tombol {
-  0% {
-    background-image: linear-gradient(green, purple);
-  }
-
-  25% {
-    background-image: linear-gradient(yellow, rgb(0, 7, 100));
-  }
-
-  50% {
-    background-image: linear-gradient(rgb(241, 145, 145), rgb(61, 61, 218));
-  }
-  75% {
-    background-image: linear-gradient(grey, rgb(233, 11, 48));
-  }
-
-  100% {
-    background-image: linear-gradient(rgb(250, 114, 148), rgb(12, 245, 226));
-  }
-}
-
-.materi {
-  text-align: center;
-  margin: auto;
-}
-.materi a {
-  text-decoration: none;
-  color: rgb(243, 233, 233);
-}
-
-.tombol:hover {
-  transform: scale(1.2);
 }
 
 .tombol {
@@ -217,14 +199,53 @@ h1 {
 .e-book3:hover {
   transform: scale(1.2);
 }
-.score-container p {
-  margin: auto;
+
+.materi {
   text-align: center;
-  font-size: small;
+  margin: auto;
+}
+.materi a {
+  text-decoration: none;
+  color: rgb(243, 233, 233);
 }
 
-.user-score {
-  font-size: large;
+@keyframes tombol {
+  0% {
+    background-image: linear-gradient(green, purple);
+  }
+
+  25% {
+    background-image: linear-gradient(yellow, rgb(0, 7, 100));
+  }
+
+  50% {
+    background-image: linear-gradient(rgb(241, 145, 145), rgb(61, 61, 218));
+  }
+  75% {
+    background-image: linear-gradient(grey, rgb(233, 11, 48));
+  }
+
+  100% {
+    background-image: linear-gradient(rgb(250, 114, 148), rgb(12, 245, 226));
+  }
+}
+
+.profil {
+  text-align: center;
+  margin: auto;
+}
+.profil a {
+  text-decoration: none;
+  color: rgb(243, 233, 233);
+}
+
+.pertanyaan {
+  z-index: 999;
+  color: black;
+  height: 100px;
+  background-color: yellow;
+  margin-top: 0;
+  align-content: center;
 }
 
 .score-container {
@@ -262,50 +283,24 @@ h1 {
 .shake {
   animation: shake 1.5s infinite;
 }
+
 @media (max-width: 600px) {
+  .game,
   .choice,
-  .kotak,
-  .text {
-    width: 300px;
-  }
-
-  .image {
-    width: 300px;
-    margin-top: 200px;
-    position: absolute;
-    transition: 1s;
-  }
-  .image img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .alert-betul {
-    width: 300px;
-    height: 200px;
-    margin-top: 100px;
-    background-image: url(../../gif/background.gif);
-    box-sizing: border-box;
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    opacity: 0.5;
-    display: none;
-  }
-
+  .alert-betul,
   .alert-salah {
     width: 300px;
-    height: 200px;
-    margin-top: 100px;
-    background-image: url(../../gif/kecewa3.gif);
-    box-sizing: border-box;
-    background-position: top;
-    background-size: cover;
-    position: absolute;
-    opacity: 0.5;
-    display: none;
   }
 
+  .score-container p {
+    margin: auto;
+    text-align: center;
+    font-size: small;
+  }
+
+  .user-score {
+    font-size: small;
+  }
   .tombol {
     margin-left: 5px;
     z-index: 999;
@@ -389,18 +384,5 @@ h1 {
     display: flex;
     background-color: rgb(250, 246, 246);
     font-size: smaller;
-  }
-  .score-container p {
-    margin: auto;
-    text-align: center;
-    font-size: small;
-  }
-
-  .user-score {
-    font-size: small;
-  }
-
-  H1 {
-    font-size: 25px;
   }
 }

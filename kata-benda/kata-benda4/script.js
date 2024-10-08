@@ -1,158 +1,3 @@
-const soundBenar = document.querySelector(".sound-benar");
-const soundSalah = document.querySelector(".sound-salah");
-const tryagain = document.querySelector(".tryagain");
-const congratulation = document.querySelector(".congratulation");
-const backsound = document.querySelector(".backsound");
-const scoreContainer = document.querySelector(".score-container");
-
-let userScore = 0;
-function updateScore(points) {
-  userScore += points;
-
-  const scoreElement = document.querySelector(".user-score");
-  scoreElement.textContent = userScore;
-}
-
-function checkFinalScore() {
-  if (userScore >= 900) {
-    window.location.href = "end.html";
-  } else {
-    window.location.href = "gagal.html";
-  }
-}
-
-// let games = [];
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   // Inisialisasi games setelah semua elemen telah dimuat
-//   games = document.querySelectorAll(".game");
-
-//   // Ambil level terakhir yang disimpan dari localStorage
-//   const lastGame = localStorage.getItem("lastGame");
-//   if (lastGame !== null) {
-//     games.forEach((game, index) => {
-//       if (index < lastGame) {
-//         game.style.display = "none";
-//       } else if (index == lastGame) {
-//         game.style.transform = "translateX(0)";
-//       } else {
-//         game.style.transform = "translateX(-400%)";
-//       }
-//     });
-//   }
-// });
-document.querySelectorAll(".game").forEach(function (game, index, games) {
-  const jawaban = game.querySelector(".jawaban").innerText.trim().toLowerCase();
-  const flipcard = game.querySelector(".flipcard");
-  const alertBetul = game.querySelector(".alert-betul");
-  const alertSalah = game.querySelector(".alert-salah");
-  const buttons = game.querySelectorAll("button");
-  const value = game.querySelector("input");
-  const pesanAlertSalah = game.dataset.alert;
-
-  if (index !== 0) {
-    game.style.transform = "translateX(-400%)";
-  }
-
-  const showNextGame = () => {
-    // saveGame(index + 1);
-    setTimeout(function () {
-      if (index + 1 < games.length) {
-        games[index + 1].style.transform = "translateX(0)";
-      } else {
-        checkFinalScore();
-      }
-    }, 2000);
-  };
-
-  const hideCurrentGame = () => {
-    setTimeout(function () {
-      game.style.transform = "translateX(400%)";
-    }, 2000);
-    setTimeout(function () {
-      game.style.display = "none";
-    }, 2500);
-  };
-
-  const hideAlertSalah = () => {
-    setTimeout(function () {
-      alertSalah.style.display = "none";
-    }, 2000);
-  };
-
-  buttons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      soundBenar.pause();
-      soundSalah.pause();
-      tryagain.pause();
-      backsound.pause();
-      const inputValue = value.value.trim().toLowerCase();
-      if (!inputValue) {
-        alert("Silahkan tulis jawaban mu terlebih dahulu");
-      } else if (inputValue === jawaban) {
-        flipcard.style.transform = "rotateY(180deg)";
-        alertBetul.style.display = "block";
-        soundBenar.play();
-        backsound.play();
-        backsound.volume = 0.4;
-        updateScore(100);
-
-        scoreContainer.classList.add("shake");
-        scoreContainer.style.backgroundColor = "yellowgreen";
-
-        setTimeout(function () {
-          scoreContainer.style.backgroundColor = "white";
-        }, 2000);
-
-        setTimeout(function () {
-          flipcard.style.transform = "rotateY(360deg)";
-        }, 2000);
-
-        setTimeout(function () {
-          hideCurrentGame();
-          showNextGame();
-        }, 2000);
-      } else {
-        alertSalah.style.display = "block";
-        flipcard.style.transform = "rotateY(180deg)";
-        soundSalah.play();
-        backsound.play();
-        backsound.volume = 0.4;
-        updateScore(-50);
-
-        scoreContainer.classList.add("shake");
-        scoreContainer.style.backgroundColor = "red";
-
-        setTimeout(function () {
-          scoreContainer.style.backgroundColor = "white";
-        }, 2000);
-
-        setTimeout(function () {
-          alert(pesanAlertSalah);
-          tryagain.play();
-          // alertSalah.style.display = "none";
-          flipcard.style.transform = "rotateY(360deg)";
-        }, 3000);
-
-        setTimeout(function () {
-          hideAlertSalah();
-        }, 5000);
-
-        // setTimeout(function () {
-        //   hideCurrentGame();
-        //   showNextGame();
-        // }, 5000);
-      }
-    });
-  });
-});
-
-// function saveGame(game) {
-//   localStorage.setItem("lastGame", game);
-// }
-
-// localStorage(clear);
-
 const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
@@ -245,6 +90,285 @@ function animate() {
 }
 
 animate();
+
+// const soundBenar = document.querySelector(".sound-benar");
+// const soundSalah = document.querySelector(".sound-salah");
+
+// let userScore = 0;
+// function updateScore(points) {
+//   userScore += points;
+
+//   const scoreElement = document.querySelector(".user-score");
+//   scoreElement.textContent = userScore;
+// }
+
+// function checkFinalScore() {
+//   if (userScore >= 1950) {
+//     setTimeout(function () {
+//       window.location.href = "end.html";
+//     }, 2000);
+//   } else {
+//     window.location.href = "gagal.html";
+//   }
+// }
+
+// let games = [];
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   // Inisialisasi games setelah semua elemen telah dimuat
+//   games = document.querySelectorAll(".game");
+
+//   // Ambil level terakhir yang disimpan dari localStorage
+//   const lastGame = localStorage.getItem("lastGame");
+//   if (lastGame !== null) {
+//     games.forEach((game, index) => {
+//       if (index < lastGame) {
+//         game.style.display = "none";
+//       } else if (index == lastGame) {
+//         game.style.transform = "translateX(0)";
+//       } else {
+//         game.style.transform = "translateX(-400%)";
+//       }
+//     });
+//   }
+// });
+
+// document.querySelectorAll(".game").forEach(function (game, index) {
+//   const jawaban = game.querySelector(".jawaban");
+//   const buttons = game.querySelectorAll("button");
+//   const value = game.querySelector("input").value.trim();
+//   const text = game.querySelector(".text");
+//   const image = game.querySelector(".image");
+//   const alertSalah = game.querySelector(".alert-salah");
+//   const alertBetul = game.querySelector(".alert-betul");
+//   const pesanAlertSalah = game.dataset.alert;
+
+//   if (index !== 0) {
+//     game.style.transform = "translateX(-400%)";
+//   }
+
+//   const showNextGame = () => {
+//     // saveGame(index + 1); // Simpan level terakhir yang dicapai
+//     setTimeout(function () {
+//       if (index + 1 < games.length) {
+//         games[index + 1].style.transform = "translateX(0)";
+//       } else {
+//         checkFinalScore();
+//       }
+//     }, 2000);
+//   };
+
+//   const hideCurrentGame = () => {
+//     setTimeout(function () {
+//       game.style.transform = "translateX(400%)";
+//     }, 2000);
+//     setTimeout(function () {
+//       game.style.display = "none";
+//     }, 2500);
+//   };
+
+//   buttons.forEach(function (button) {
+//     soundBenar.pause();
+//     soundSalah.pause();
+//     button.addEventListener("click", function () {
+//       if (value.toLowerCase() === jawaban.innerText) {
+//         text.style.transform = "translateY(-100px)";
+//         image.style.transform = "translateY(100px)";
+//         alertBetul.style.display = "block";
+//         soundBenar.play();
+//         updateScore(100);
+
+//         setTimeout(function () {
+//           text.style.transform = "translateY(0)";
+//           image.style.transform = "translateY(0)";
+//         }, 2000);
+
+//         setTimeout(function () {
+//           alertBetul.style.display = "none";
+//           hideCurrentGame();
+//           showNextGame();
+//         }, 3000);
+//       } else {
+//         text.style.transform = "translateY(-100px)";
+//         image.style.transform = "translateY(100px)";
+//         alertSalah.style.display = "block";
+//         soundSalah.play();
+//         updateScore(-50);
+
+//         setTimeout(function () {
+//           alert(pesanAlertSalah);
+//           text.style.transform = "translateY(0)";
+//           image.style.transform = "translateY(0)";
+//         }, 2000);
+
+//         // setTimeout(function () {
+//         //   hideCurrentGame();
+//         //   showNextGame();
+//         // }, 3200);
+//       }
+//     });
+//   });
+// });
+
+// function saveGame(game) {
+//   localStorage.setItem("lastGame", game);
+// }
+// localStorage(clear);
+
+const soundBenar = document.querySelector(".sound-benar");
+const soundSalah = document.querySelector(".sound-salah");
+const tryagain = document.querySelector(".tryagain");
+const congratulation = document.querySelector(".congratulation");
+const backsound = document.querySelector(".backsound");
+const scoreContainer = document.querySelector(".score-container");
+
+let userScore = 0;
+
+function updateScore(points) {
+  userScore += points;
+
+  const scoreElement = document.querySelector(".user-score");
+  scoreElement.textContent = userScore;
+}
+
+function checkFinalScore() {
+  congratulation.pause();
+  if (userScore >= 900) {
+    setTimeout(function () {
+      congratulation.play();
+      window.location.href = "end.html";
+    }, 2000);
+  } else {
+    window.location.href = "gagal.html";
+  }
+}
+
+let games = [];
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Inisialisasi games setelah semua elemen telah dimuat
+  games = document.querySelectorAll(".game");
+
+  // Ambil level terakhir yang disimpan dari localStorage
+  const lastGame = localStorage.getItem("lastGame");
+  if (lastGame !== null) {
+    games.forEach((game, index) => {
+      if (index < lastGame) {
+        game.style.display = "none";
+      } else if (index == lastGame) {
+        game.style.transform = "translateX(0)";
+      } else {
+        game.style.transform = "translateX(-400%)";
+      }
+    });
+  }
+});
+
+document.querySelectorAll(".game").forEach(function (game, index) {
+  const jawaban = game.querySelector(".jawaban").innerText.trim().toLowerCase();
+  const buttons = game.querySelectorAll("button");
+  const value = game.querySelector("input");
+  const text = game.querySelector(".text");
+  const image = game.querySelector(".image");
+  const alertSalah = game.querySelector(".alert-salah");
+  const alertBetul = game.querySelector(".alert-betul");
+  const pesanAlertSalah = game.dataset.alert;
+
+  if (index !== 0) {
+    game.style.transform = "translateX(-400%)";
+  }
+
+  const showNextGame = () => {
+    saveGame(index + 1); // Simpan level terakhir yang dicapai
+    setTimeout(function () {
+      if (index + 1 < games.length) {
+        games[index + 1].style.transform = "translateX(0)";
+      } else {
+        checkFinalScore();
+      }
+    }, 2000);
+  };
+
+  const hideCurrentGame = () => {
+    setTimeout(function () {
+      game.style.transform = "translateX(400%)";
+    }, 2000);
+    setTimeout(function () {
+      game.style.display = "none";
+    }, 2500);
+  };
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      soundBenar.pause();
+      soundSalah.pause();
+      tryagain.pause();
+      backsound.pause();
+      const inputValue = value.value.trim().toLowerCase();
+
+      if (!inputValue) {
+        alert("Silahkan tulis jawaban mu terlebih dahulu!!");
+      } else if (inputValue === jawaban) {
+        // text.style.transform = "translateY(-100px)";
+        image.style.transform = "translateX(-100%)";
+        alertBetul.style.display = "block";
+        soundBenar.play();
+        backsound.play();
+        backsound.volume = 0.4;
+        updateScore(100);
+
+        scoreContainer.classList.add("shake");
+        scoreContainer.style.backgroundColor = "yellowgreen";
+
+        setTimeout(function () {
+          scoreContainer.style.backgroundColor = "white";
+        }, 2000);
+
+        setTimeout(function () {
+          // text.style.transform = "translateY(0)";
+          image.style.transform = "translateY(0)";
+        }, 2000);
+
+        setTimeout(function () {
+          alertBetul.style.display = "none";
+          hideCurrentGame();
+          showNextGame();
+        }, 3000);
+      } else {
+        // text.style.transform = "translateY(-100px)";
+        image.style.transform = "translateX(-100%)";
+        alertSalah.style.display = "block";
+        soundSalah.play();
+        backsound.play();
+        backsound.volume = 0.4;
+
+        updateScore(-50);
+
+        scoreContainer.classList.add("shake");
+        scoreContainer.style.backgroundColor = "red";
+
+        setTimeout(function () {
+          scoreContainer.style.backgroundColor = "white";
+        }, 2000);
+
+        setTimeout(function () {
+          alert(pesanAlertSalah);
+          tryagain.play();
+          // text.style.transform = "translateY(0)";
+          image.style.transform = "translateY(0)";
+          alertSalah.style.display = "none";
+        }, 2000);
+      }
+    });
+  });
+});
+
+function saveGame(game) {
+  localStorage.setItem("lastGame", game);
+}
+
+// Menghapus level yang tersimpan di localStorage saat permainan dimulai
+localStorage.removeItem("lastGame");
 
 const petunjuk = document.querySelector(".petunjuk");
 petunjuk.addEventListener("click", function () {

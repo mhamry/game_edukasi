@@ -17,7 +17,7 @@ h1 {
 }
 
 .jawaban {
-  margin-top: 300px;
+  margin-top: 200px;
   display: none;
 }
 
@@ -28,7 +28,7 @@ h1 {
   height: 200px;
   color: antiquewhite;
   display: flex;
-  line-height: 150px;
+  line-height: 100px;
   justify-content: center;
   transition: 1s;
   z-index: 9;
@@ -88,6 +88,40 @@ input {
   left: 0;
   z-index: -999;
   background-color: grey;
+}
+
+@keyframes tombol {
+  0% {
+    background-image: linear-gradient(green, purple);
+  }
+
+  25% {
+    background-image: linear-gradient(yellow, rgb(0, 7, 100));
+  }
+
+  50% {
+    background-image: linear-gradient(rgb(241, 145, 145), rgb(61, 61, 218));
+  }
+  75% {
+    background-image: linear-gradient(grey, rgb(233, 11, 48));
+  }
+
+  100% {
+    background-image: linear-gradient(rgb(250, 114, 148), rgb(12, 245, 226));
+  }
+}
+
+.materi {
+  text-align: center;
+  margin: auto;
+}
+.materi a {
+  text-decoration: none;
+  color: rgb(243, 233, 233);
+}
+
+.tombol:hover {
+  transform: scale(1.2);
 }
 
 .tombol {
@@ -176,37 +210,6 @@ input {
 .e-book3:hover {
   transform: scale(1.2);
 }
-
-@keyframes tombol {
-  0% {
-    background-image: linear-gradient(green, purple);
-  }
-
-  25% {
-    background-image: linear-gradient(yellow, rgb(0, 7, 100));
-  }
-
-  50% {
-    background-image: linear-gradient(rgb(241, 145, 145), rgb(61, 61, 218));
-  }
-  75% {
-    background-image: linear-gradient(grey, rgb(233, 11, 48));
-  }
-
-  100% {
-    background-image: linear-gradient(rgb(250, 114, 148), rgb(12, 245, 226));
-  }
-}
-
-.materi {
-  text-align: center;
-  margin: auto;
-}
-.materi a {
-  text-decoration: none;
-  color: rgb(243, 233, 233);
-}
-
 .score-container p {
   margin: auto;
   text-align: center;
@@ -216,6 +219,7 @@ input {
 .user-score {
   font-size: large;
 }
+
 .score-container {
   /* display: inline-block; */
   background-color: lightblue;
@@ -251,6 +255,7 @@ input {
 .shake {
   animation: shake 1.5s infinite;
 }
+
 button {
   display: block;
   padding: 7px;
@@ -402,18 +407,21 @@ button {
   input {
     width: 300px;
     height: 50px;
-    font-size: 25px;
     margin-top: 10px;
     border-radius: 10px;
-
+    font-size: 25px;
     text-align: center;
   }
   button {
-    padding: 7px;
+    padding: 10px;
     border-radius: 6px;
-    margin-top: 3px;
+    margin-top: 10px;
     background-color: green;
     color: aliceblue;
     cursor: pointer;
+  }
+
+  H1 {
+    font-size: 22px;
   }
 }

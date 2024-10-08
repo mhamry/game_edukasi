@@ -106,8 +106,10 @@ function updateScore(points) {
 }
 
 function checkFinalScore() {
-  if (userScore >= 1850) {
+  // congratulation.pause();
+  if (userScore >= 1800) {
     setTimeout(function () {
+      congratulation.play();
       window.location.href = "end.html";
     }, 2000);
   } else {
@@ -143,6 +145,7 @@ document.querySelectorAll(".game").forEach(function (game, index) {
   const image = game.querySelector(".image");
   const alertSalah = game.querySelector(".alert-salah");
   const alertBetul = game.querySelector(".alert-betul");
+
   const pesanAlertSalah = game.dataset.alert;
 
   if (index !== 0) {
