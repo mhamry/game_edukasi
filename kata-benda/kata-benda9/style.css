@@ -6,6 +6,7 @@ body {
 h1 {
   margin: auto;
   text-align: center;
+  margin-top: -5px;
 }
 .game {
   width: 400px;
@@ -384,5 +385,10 @@ h1 {
     display: flex;
     background-color: rgb(250, 246, 246);
     font-size: smaller;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-top: -5px;
   }
 }

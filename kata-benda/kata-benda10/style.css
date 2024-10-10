@@ -424,4 +424,9 @@ button {
     cursor: pointer;
     display: block;
   }
+
+  h1 {
+    font-size: 20px;
+    margin-top: -5px;
+  }
 }
