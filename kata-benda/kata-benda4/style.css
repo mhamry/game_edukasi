@@ -124,7 +124,7 @@ input {
 }
 
 .tombol {
-  margin-left: 125px;
+  margin-left: 275px;
   position: absolute;
   top: 30px;
   height: 50px;
@@ -136,7 +136,7 @@ input {
 }
 
 .petunjuk {
-  margin-left: 125px;
+  margin-left: 275px;
   position: absolute;
   top: 100px;
   height: 50px;
@@ -147,7 +147,7 @@ input {
 }
 
 .e-book1 {
-  margin-left: 125px;
+  margin-left: 275px;
   position: absolute;
   top: 170px;
   height: 50px;
@@ -158,7 +158,7 @@ input {
 }
 
 .e-book2 {
-  margin-left: 125px;
+  margin-left: 275px;
   position: absolute;
   top: 240px;
   height: 50px;
@@ -169,7 +169,7 @@ input {
 }
 
 .e-book3 {
-  margin-left: 125px;
+  margin-left: 275px;
   position: absolute;
   top: 310px;
   height: 50px;
@@ -180,7 +180,7 @@ input {
 }
 
 .score-container {
-  margin-left: 125px;
+  margin-left: 275px;
   position: absolute;
   top: 380px;
   height: 50px;
@@ -231,6 +231,13 @@ input {
 }
 
 .e-book3:hover {
+  transform: scale(1.2);
+}
+
+.kembali:hover {
+  transform: scale(1.2);
+}
+.home:hover {
   transform: scale(1.2);
 }
 .score-container p {
