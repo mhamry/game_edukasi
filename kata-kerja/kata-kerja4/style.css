@@ -362,6 +362,34 @@ button {
     font-size: smaller;
   }
 
+  .kembali {
+    margin-left: 5px;
+    position: absolute;
+    z-index: 999;
+    top: 293px;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    background-color: rgb(8, 18, 218);
+    font-size: smaller;
+    border: 3px white solid;
+  }
+
+  .home {
+    margin-left: 5px;
+    position: absolute;
+    z-index: 999;
+    top: 253px;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    background-color: white;
+    font-size: smaller;
+    border: 3px solid black;
+  }
+
   .score-container {
     margin-left: 5px;
     z-index: 999;
