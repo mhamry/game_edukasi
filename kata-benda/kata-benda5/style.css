@@ -164,6 +164,30 @@ h1 {
   background-color: rgb(224, 234, 224);
 }
 
+.kembali {
+  margin-left: 275px;
+  position: absolute;
+  top: 450px;
+  height: 50px;
+  width: 130px;
+  border-radius: 8px;
+  display: flex;
+  background-color: rgb(247, 7, 211);
+  border: 3px solid black;
+}
+
+.home {
+  margin-left: 275px;
+  position: absolute;
+  top: 520px;
+  height: 50px;
+  width: 130px;
+  border-radius: 8px;
+  display: flex;
+  border: 3px black solid;
+  background-color: white;
+}
+
 .tombol:hover {
   transform: scale(1.2);
 }
@@ -412,6 +436,34 @@ h1 {
     display: flex;
     background-color: rgb(246, 246, 249);
     font-size: smaller;
+  }
+
+  .kembali {
+    margin-left: 5px;
+    position: absolute;
+    z-index: 999;
+    top: 293px;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    background-color: rgb(8, 18, 218);
+    font-size: smaller;
+    border: 3px white solid;
+  }
+
+  .home {
+    margin-left: 5px;
+    position: absolute;
+    z-index: 999;
+    top: 253px;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    background-color: white;
+    font-size: smaller;
+    border: 3px solid black;
   }
 
   .score-container p {
