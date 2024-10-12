@@ -50,7 +50,7 @@ input {
   text-align: center;
 }
 .game {
-  margin-top: -3px;
+  margin-top: -10px;
   transition: 2s;
 }
 
@@ -414,5 +414,9 @@ button {
     background-color: green;
     color: aliceblue;
     cursor: pointer;
+  }
+
+  h1 {
+    font-size: 20px;
   }
 }

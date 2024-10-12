@@ -51,7 +51,7 @@ input {
   text-align: center;
 }
 .game {
-  margin-top: -3px;
+  margin-top: -10px;
   transition: 2s;
 }
 
@@ -420,5 +420,9 @@ button {
 
   .user-score {
     font-size: small;
+  }
+
+  h1 {
+    font-size: 20px;
   }
 }
