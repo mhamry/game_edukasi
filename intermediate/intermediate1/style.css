@@ -59,7 +59,7 @@ h1 {
   margin-top: 10px;
 }
 .game {
-  margin-top: -3px;
+  margin-top: -10px;
   transition: 2s;
 }
 
@@ -242,6 +242,42 @@ h1 {
   margin: auto;
   text-align: center;
   font-size: small;
+}
+
+.score-container {
+  /* display: inline-block; */
+  background-color: lightblue;
+  border: 2px solid blue;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Animasi bergoyang */
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-5px, 0);
+  }
+  50% {
+    transform: translate(5px, 0);
+  }
+  75% {
+    transform: translate(-5px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Efek bergoyang saat hover */
+.score-container:hover {
+  animation: shake 0.3s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.shake {
+  animation: shake 1.5s infinite;
 }
 
 .user-score {

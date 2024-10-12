@@ -94,6 +94,7 @@ animate();
 const soundBenar = document.querySelector(".sound-benar");
 const soundSalah = document.querySelector(".sound-salah");
 const backsound = document.querySelector(".backsound");
+const scoreContainer = document.querySelector(".score-container");
 
 let userScore = 0;
 function updateScore(points) {
@@ -182,6 +183,13 @@ document.querySelectorAll(".game").forEach(function (game, index) {
         backsound.volume = 0.4;
         updateScore(100);
 
+        scoreContainer.classList.add("shake");
+        scoreContainer.style.backgroundColor = "yellowgreen";
+
+        setTimeout(function () {
+          scoreContainer.style.backgroundColor = "white";
+        }, 2000);
+
         setTimeout(function () {
           text.style.transform = "translateY(0)";
           image.style.transform = "translateY(0)";
@@ -200,6 +208,13 @@ document.querySelectorAll(".game").forEach(function (game, index) {
         backsound.play();
         backsound.volume = 0.4;
         updateScore(-50);
+
+        scoreContainer.classList.add("shake");
+        scoreContainer.style.backgroundColor = "red";
+
+        setTimeout(function () {
+          scoreContainer.style.backgroundColor = "white";
+        }, 2000);
 
         setTimeout(function () {
           alert(pesanAlertSalah);
