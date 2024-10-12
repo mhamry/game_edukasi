@@ -261,7 +261,7 @@ h1 {
 }
 
 h3 {
-  margin-top: 50px;
+  align-content: center;
   font-size: 30px;
 }
 @media (max-width: 600px) {
