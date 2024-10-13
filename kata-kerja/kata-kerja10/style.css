@@ -206,6 +206,14 @@ button {
   transform: scale(1.2);
 }
 
+.kembali:hover {
+  transform: scale(1.2);
+}
+
+.home:hover {
+  transform: scale(1.2);
+}
+
 .materi {
   text-align: center;
   margin: auto;
