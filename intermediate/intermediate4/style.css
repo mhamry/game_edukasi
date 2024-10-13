@@ -23,7 +23,7 @@ h1 {
 
 .text {
   position: absolute;
-  background-color: black;
+  background-color: yellow;
   width: 400px;
   height: 200px;
   color: antiquewhite;
@@ -288,6 +288,7 @@ button {
 h3 {
   line-height: normal;
   align-content: center;
+  color: black;
 }
 
 @media (max-width: 600px) {

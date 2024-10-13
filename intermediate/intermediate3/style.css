@@ -26,7 +26,7 @@ h1 {
   background-color: yellow;
   width: 400px;
   height: 200px;
-  color: antiquewhite;
+  color: black;
   display: flex;
   line-height: 150px;
   justify-content: center;
@@ -291,6 +291,7 @@ h1 {
 h3 {
   line-height: normal;
   align-content: center;
+  color: black;
 }
 @media (max-width: 600px) {
   .choice,
