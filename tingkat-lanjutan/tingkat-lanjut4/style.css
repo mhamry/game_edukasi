@@ -236,7 +236,7 @@ span {
 }
 
 .tombol {
-  margin-left: 125px;
+  margin-left: 275px;
   position: absolute;
   top: 30px;
   height: 50px;
@@ -248,7 +248,7 @@ span {
 }
 
 .petunjuk {
-  margin-left: 125px;
+  margin-left: 275px;
   position: absolute;
   top: 100px;
   height: 50px;
@@ -259,7 +259,7 @@ span {
 }
 
 .e-book1 {
-  margin-left: 125px;
+  margin-left: 275px;
   position: absolute;
   top: 170px;
   height: 50px;
@@ -270,7 +270,7 @@ span {
 }
 
 .e-book2 {
-  margin-left: 125px;
+  margin-left: 275px;
   position: absolute;
   top: 240px;
   height: 50px;
@@ -281,7 +281,7 @@ span {
 }
 
 .e-book3 {
-  margin-left: 125px;
+  margin-left: 275px;
   position: absolute;
   top: 310px;
   height: 50px;
@@ -291,8 +291,32 @@ span {
   background-color: rgb(10, 14, 245);
 }
 
+.kembali {
+  margin-left: 275px;
+  position: absolute;
+  top: 450px;
+  height: 50px;
+  width: 130px;
+  border-radius: 8px;
+  display: flex;
+  background-color: rgb(247, 7, 211);
+  border: 3px solid black;
+}
+
+.home {
+  margin-left: 275px;
+  position: absolute;
+  top: 520px;
+  height: 50px;
+  width: 130px;
+  border-radius: 8px;
+  display: flex;
+  border: 3px black solid;
+  background-color: white;
+}
+
 .score-container {
-  margin-left: 125px;
+  margin-left: 275px;
   position: absolute;
   top: 380px;
   height: 50px;
@@ -319,6 +343,14 @@ span {
 }
 
 .e-book3:hover {
+  transform: scale(1.2);
+}
+
+.kembali:hover {
+  transform: scale(1.2);
+}
+
+.home:hover {
   transform: scale(1.2);
 }
 
@@ -423,6 +455,33 @@ span {
     font-size: smaller;
   }
 
+  .kembali {
+    margin-left: 5px;
+    position: absolute;
+    z-index: 999;
+    top: 293px;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    background-color: rgb(8, 18, 218);
+    font-size: smaller;
+    border: 3px white solid;
+  }
+
+  .home {
+    margin-left: 5px;
+    position: absolute;
+    z-index: 999;
+    top: 253px;
+    height: 30px;
+    width: 70px;
+    border-radius: 8px;
+    display: flex;
+    background-color: white;
+    font-size: smaller;
+    border: 3px solid black;
+  }
   .score-container {
     margin-left: 5px;
     z-index: 999;
