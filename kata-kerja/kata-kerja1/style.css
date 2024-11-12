@@ -78,7 +78,7 @@ h1 {
 .choice {
   width: 400px;
   height: 30px;
-  background-color: aqua;
+  background-color: #00ffff;
   margin-top: 6px;
   padding-left: 10px;
   display: flex;
@@ -86,6 +86,12 @@ h1 {
   border-radius: 10px;
   cursor: pointer;
   box-sizing: border-box;
+}
+
+.choice:hover {
+  background-color: #acf4f4;
+  scale: 1.01;
+  border: solid 1px yellow;
 }
 
 .answer {
