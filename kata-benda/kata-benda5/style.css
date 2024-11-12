@@ -39,6 +39,7 @@ h1 {
   margin-top: 200px;
   position: absolute;
   transition: 1s;
+  z-index: 9999;
 }
 
 .choice {

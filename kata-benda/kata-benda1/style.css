@@ -39,6 +39,7 @@ h1 {
   margin-top: 200px;
   position: absolute;
   transition: 1s;
+  z-index: 9999;
 }
 
 .choice {
@@ -455,11 +456,5 @@ h1 {
 
   H1 {
     font-size: 20px;
-  }
-
-  .choice:active {
-    background-color: #acf4f4;
-    scale: 1.01;
-    border: solid 1px yellow;
   }
 }
