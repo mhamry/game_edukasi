@@ -69,7 +69,7 @@
       .download {
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 60%;
         transform: translate(-50%);
         display: block;
         width: 200px;
@@ -110,8 +110,20 @@
         font-style: normal;
       }
 
-      #inputName {
+      #userclass {
+        margin: 235px auto;
+        font-size: 3rem;
+        font-style: italic;
+        white-space: nowrap;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      #inputName,
+      #inputClass {
         text-align: center;
+        margin-bottom: 10px;
       }
 
       .next-level {
@@ -155,6 +167,7 @@
           <div class="content">
             <!-- <p>This certificate is awarded to</p> -->
             <h2 id="username">John Doe</h2>
+            <h4 id="userclass">VIII</h4>
             <!-- <p>for successfully completing the Expert Level</p>
           <p>inhe Game  tof Knowledge</p> -->
           </div>
@@ -162,6 +175,8 @@
         <form action="" class="form">
           <label for="inputName">Tuliskan Nama Anda : </label>
           <input type="text" id="inputName" placeholder="Enter your name" autocomplete="off" focus />
+          <label for="inputClass">Tuliskan Kelas Anda : </label>
+          <input type="text" id="inputClass" placeholder="Enter your Class" autocomplete="off" focus />
         </form>
 
         <button class="download" id="downloadButton">Download certificate</button>
@@ -238,7 +253,9 @@
 
       document.getElementById("downloadButton").addEventListener("click", function () {
         const username = document.getElementById("inputName").value.trim();
+        const userclass = document.getElementById("inputClass").value.trim();
         const usernameElement = document.getElementById("username");
+        const userclassElement = document.getElementById("userclass");
         const download = document.querySelector(".download");
         const spinner = document.querySelector(".btn"); // Assuming .spinner instead of .btn
         const nextLevel = document.querySelector(".next-level");
@@ -249,6 +266,7 @@
         } else {
           // Set the username in the certificate
           usernameElement.textContent = username;
+          userclassElement.textContent = userclass;
 
           // Show spinner, hide form and download button
           spinner.style.display = "block";
