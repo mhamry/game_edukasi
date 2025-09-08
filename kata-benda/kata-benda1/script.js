@@ -91,6 +91,8 @@ function animate() {
 
 animate();
 
+//batas
+
 const soundBenar = document.querySelector(".sound-benar");
 const soundSalah = document.querySelector(".sound-salah");
 const congratulation = document.querySelector(".congratulation");
@@ -115,28 +117,7 @@ function checkFinalScore() {
   }
 }
 
-let games = [];
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Inisialisasi games setelah semua elemen telah dimuat
-  games = document.querySelectorAll(".game");
-
-  // Ambil level terakhir yang disimpan dari localStorage
-  const lastGame = localStorage.getItem("lastGame");
-  if (lastGame !== null) {
-    games.forEach((game, index) => {
-      if (index < lastGame) {
-        game.style.display = "none";
-      } else if (index == lastGame) {
-        game.style.transform = "translateX(0)";
-      } else {
-        game.style.transform = "translateX(-400%)";
-      }
-    });
-  }
-});
-
-document.querySelectorAll(".game").forEach(function (game, index) {
+document.querySelectorAll(".game").forEach(function (game, index, games) {
   const jawaban = game.querySelector(".jawaban");
   const choices = game.querySelectorAll(".choice");
   const text = game.querySelector(".text");
@@ -232,11 +213,6 @@ document.querySelectorAll(".game").forEach(function (game, index) {
     });
   });
 });
-
-function saveGame(game) {
-  localStorage.setItem("lastGame", game);
-}
-localStorage.clear();
 
 const petunjuk = document.querySelector(".petunjuk");
 petunjuk.addEventListener("click", function () {
