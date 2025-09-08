@@ -79,7 +79,7 @@
         color: #f0f0f0;
       }
 
-      .btn {
+      #spinner {
         position: absolute;
         left: 50%;
         top: 50%;
@@ -170,7 +170,7 @@
           <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
           <span class="visually-hidden" role="status">Loading...</span>
         </button> -->
-        <button class="btn btn-primary" type="button" disabled>
+        <button class="btn btn-primary" type="button" disabled id="spinner">
           <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
           <span role="status">Loading...</span>
         </button>
@@ -240,7 +240,7 @@
         const username = document.getElementById("inputName").value.trim();
         const usernameElement = document.getElementById("username");
         const download = document.querySelector(".download");
-        const spinner = document.querySelector(".btn"); // Assuming .spinner instead of .btn
+        const spinner = document.getElementById("spinner"); // Assuming .spinner instead of .btn
         const nextLevel = document.querySelector(".next-level");
         const form = document.querySelector(".form");
 
