@@ -1,6 +1,6 @@
 body {
   background-color: grey;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 h1 {
