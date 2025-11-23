@@ -117,27 +117,6 @@ function checkFinalScore() {
   }
 }
 
-// let games = [];
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   // Inisialisasi games setelah semua elemen telah dimuat
-//   games = document.querySelectorAll(".game");
-
-//   // Ambil level terakhir yang disimpan dari localStorage
-//   const lastGame = localStorage.getItem("lastGame");
-//   if (lastGame !== null) {
-//     games.forEach((game, index) => {
-//       if (index < lastGame) {
-//         game.style.display = "none";
-//       } else if (index == lastGame) {
-//         game.style.transform = "translateX(0)";
-//       } else {
-//         game.style.transform = "translateX(-400%)";
-//       }
-//     });
-//   }
-// });
-
 document.querySelectorAll(".game").forEach(function (game, index, games) {
   const jawaban = game.querySelector(".jawaban").innerText.trim().toLowerCase();
   const buttons = game.querySelectorAll("button");
