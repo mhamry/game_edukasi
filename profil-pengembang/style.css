@@ -105,6 +105,10 @@ h1 {
   cursor: pointer;
 }
 
+.kembali a {
+  text-decoration: none;
+}
+
 .kembali h3 {
   font-size: 15px;
   font-weight: bold;
