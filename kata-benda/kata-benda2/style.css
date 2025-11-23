@@ -291,12 +291,14 @@ input {
 
 button {
   display: block;
-  padding: 7px;
-  border-radius: 6px;
-  background-color: green;
-  color: aliceblue;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: greenyellow;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
-  margin-top: 3px;
+  margin-top: 10px;
 }
 
 @media (max-width: 600px) {
@@ -473,12 +475,15 @@ button {
     text-align: center;
   }
   button {
-    padding: 10px;
-    border-radius: 6px;
-    margin-top: 10px;
-    background-color: green;
-    color: aliceblue;
+    display: block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
     cursor: pointer;
+    margin-top: 10px;
   }
 
   H1 {

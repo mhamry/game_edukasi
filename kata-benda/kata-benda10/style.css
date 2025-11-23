@@ -86,12 +86,15 @@ input {
 }
 
 button {
-  padding: 3px;
-  border-radius: 8px;
-  background-color: green;
-  cursor: pointer;
   display: block;
-  margin-top: 8px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: greenyellow;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .score-container p {
@@ -478,11 +481,15 @@ button {
   }
 
   button {
-    padding: 3px;
-    border-radius: 8px;
-    background-color: green;
-    cursor: pointer;
     display: block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
   }
 
   h1 {
