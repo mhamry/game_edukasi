@@ -56,11 +56,11 @@ h1 {
   box-sizing: border-box;
 }
 
-.choice:hover {
+/* .choice:hover {
   background-color: #acf4f4;
   scale: 1.01;
   border: solid 1px yellow;
-}
+} */
 .game {
   margin-top: -13px;
   transition: 2s;
