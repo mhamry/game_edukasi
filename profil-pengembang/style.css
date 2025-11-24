@@ -148,5 +148,6 @@ h3 {
 
   .container {
     flex-direction: column;
+    padding: 15px;
   }
 }
