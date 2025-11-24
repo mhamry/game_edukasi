@@ -14,6 +14,7 @@ h1 {
   display: flex;
   justify-content: center;
   text-align: center;
+  z-index: 0;
 }
 
 .jawaban {

@@ -54,6 +54,10 @@
         cursor: pointer;
       }
 
+      .kembali a {
+        text-decoration: none;
+      }
+
       .kembali h3 {
         font-size: 15px;
         font-weight: bold;
@@ -79,11 +83,236 @@
         margin: auto;
       }
 
-      /* @media (max-width: 450px) {
-        .galeri {
-          width: 100%;
+      /* SLIDE IMAGE START */
+      .slider {
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+        margin: auto;
+      }
+
+      .slides {
+        width: 500%;
+        height: 250px;
+        display: flex;
+      }
+
+      .slides input {
+        display: none;
+      }
+
+      .slide {
+        width: 20%;
+        transition: 2s;
+      }
+
+      .slide img {
+        width: 350px;
+        height: 250px;
+      }
+
+      /* navigation auto */
+
+      .navigation-auto {
+        display: flex;
+        position: absolute;
+        width: 350px;
+        margin-top: 210px;
+        justify-content: center;
+      }
+
+      .navigation-auto div {
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 50%;
+        transition: 1s;
+      }
+
+      .navigation-auto div:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      #radio1:checked ~ .navigation-auto div.auto-btn1 {
+        background-color: blue;
+      }
+
+      #radio2:checked ~ .navigation-auto div.auto-btn2 {
+        background-color: blue;
+      }
+      #radio3:checked ~ .navigation-auto div.auto-btn3 {
+        background-color: blue;
+      }
+      #radio4:checked ~ .navigation-auto div.auto-btn4 {
+        background-color: blue;
+      }
+
+      /* navigation manual */
+
+      .navigation-manual {
+        position: absolute;
+        width: 350px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+        transition: 2s;
+      }
+
+      .manual-btn {
+        border: 2px solid rgb(248, 54, 5);
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 1s;
+        /* background-color: blue; */
+      }
+
+      .manual-btn:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      .manual-btn:hover {
+        background-color: rgb(240, 8, 8);
+      }
+      #radio1:checked ~ .first {
+        margin-left: 0%;
+      }
+
+      #radio2:checked ~ .first {
+        margin-left: -20%;
+      }
+      #radio3:checked ~ .first {
+        margin-left: -40%;
+      }
+      #radio4:checked ~ .first {
+        margin-left: -60%;
+      }
+
+      th {
+        text-align: left;
+        background-color: greenyellow;
+      }
+
+      span {
+        color: red;
+      }
+
+      /* ICON START */
+      .icons {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        margin: auto;
+        justify-content: center;
+        margin-top: 20px;
+        align-items: center;
+        gap: 25px;
+        background-color: #25d366;
+      }
+      .icons .facebook {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .icons .facebook:hover {
+        transform: translateY(-5px);
+        fill: #00aec7;
+      }
+
+      .icons .instagram {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .icons .instagram:hover {
+        transform: translateY(-5px);
+        /* background-color: #e4405f; */
+        fill: #e4405f;
+      }
+
+      .icons .twitter {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .icons .twitter:hover {
+        transform: translateY(-5px);
+        /* background-color: #1d9bf0; */
+        fill: #1d9bf0;
+      }
+
+      .icons .wa {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .icons .wa:hover {
+        transform: translateY(-5px);
+        fill: #25d366;
+      }
+
+      .icons .youtube {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .icons .youtube:hover {
+        transform: translateY(-5px);
+        /* background-color: #ff0000; */
+        fill: #ff0000;
+      }
+
+      /* ICON END */
+
+      @media (min-width: 600px) {
+        .container-satu {
+          display: flex;
+          justify-content: space-evenly;
+          box-sizing: border-box;
         }
-      } */
+
+        .container-dua {
+          display: flex;
+          justify-content: space-evenly;
+          box-sizing: border-box;
+        }
+
+        .layanan {
+          width: 30%;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        /* slide image */
+
+        .slider,
+        .slide img {
+          width: 800px;
+          height: 350px;
+          margin: auto;
+        }
+
+        .navigation-manual {
+          position: absolute;
+          width: 800px;
+          margin-top: 60px;
+          display: flex;
+          justify-content: center;
+          transition: 2s;
+        }
+
+        .navigation-auto {
+          display: flex;
+          position: absolute;
+          width: 800px;
+          margin-top: 310px;
+          justify-content: center;
+        }
+      }
     </style>
   </head>
   <body>
@@ -93,6 +322,40 @@
 
     <div class="container">
       <h1>OCUPATION ( PEKERJAAN)</h1>
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+
+          <div class="slide first">
+            <img src="../../image/verb/membersihkan.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="../../image/verb/mandi.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="../../image/verb/makan.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="../../image/verb/masak.png" alt="" />
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+        </div>
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+      </div>
       <p class="pekerjaan">
         1.GURU : TEACHER <br />
         2.PETANI : FARMER <br />
@@ -124,32 +387,32 @@
 
         <div class="galeri">
           <div class="gambar">
-            <img class="poto" src="image/1.jpg" alt="" width="150px" height="150px" />
+            <img class="poto" src="../../image/noun/guru.png" alt="" width="150px" height="150px" />
             <p class="kalimat">She is a Teacher.</p>
           </div>
 
           <div class="gambar">
-            <img class="poto" src="image/2.jpg" alt="" width="150px" height="150px" />
+            <img class="poto" src="../../image/noun/jurumasak.png" alt="" width="150px" height="150px" />
             <p class="kalimat">He is a Chef.</p>
           </div>
 
           <div class="gambar">
-            <img class="poto" src="image/3.jpg" alt="" width="150px" height="150px" />
+            <img class="poto" src="../../image/noun/sopir.png" alt="" width="150px" height="150px" />
             <p class="kalimat">He is a Driver.</p>
           </div>
 
           <div class="gambar">
-            <img class="poto" src="image/4.jpg" alt="" width="150px" height="150px" />
+            <img class="poto" src="../../image/noun/irt.png" alt="" width="150px" height="150px" />
             <p class="kalimat">She is a House Wife.</p>
           </div>
 
           <div class="gambar">
-            <img class="poto" src="image/5.jpg" alt="" width="150px" height="150px" />
+            <img class="poto" src="../../image/noun/bengkel.png" alt="" width="150px" height="150px" />
             <p class="kalimat">He is a Mechanic.</p>
           </div>
 
           <div class="gambar">
-            <img class="poto" src="image/6.jpg" alt="" width="150px" height="150px" />
+            <img class="poto" src="../../image/noun/pilot.png" alt="" width="150px" height="150px" />
             <p class="kalimat">He is a Pilot.</p>
           </div>
         </div>
