@@ -55,11 +55,11 @@ h1 {
   box-sizing: border-box;
 }
 
-.choice:hover {
+/* .choice:hover {
   background-color: #acf4f4;
   scale: 1.01;
   border: solid 1px yellow;
-}
+} */
 
 .answer {
   margin-top: 10px;
@@ -302,6 +302,10 @@ h1 {
   .kotak,
   .text {
     width: 300px;
+  }
+
+  .kotak {
+    z-index: 0;
   }
 
   .image {
