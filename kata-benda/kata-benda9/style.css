@@ -1,5 +1,4 @@
 body {
-  background-color: grey;
   overflow: hidden;
 }
 
@@ -7,6 +6,7 @@ h1 {
   margin: auto;
   text-align: center;
   margin-top: -5px;
+  color: white;
 }
 .game {
   width: 400px;
@@ -117,7 +117,7 @@ h1 {
   top: 0;
   left: 0;
   z-index: -999;
-  background-color: grey;
+  background-color: black;
 }
 
 .tombol {
@@ -140,7 +140,11 @@ h1 {
   width: 130px;
   border-radius: 8px;
   display: flex;
-  background-color: rgb(1, 14, 0);
+  background-color: yellow;
+}
+
+.petunjuk .materi a {
+  color: black;
 }
 
 .e-book1 {
