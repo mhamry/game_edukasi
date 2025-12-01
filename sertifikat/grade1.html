@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sertifikat1</title>
+    <title>sertifikat2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +20,7 @@
         align-items: center;
         height: 100vh;
         background-color: #f0f0f0;
-        /* overflow: hidden; */
+        overflow: hidden;
       }
 
       #certificate {
@@ -33,7 +33,7 @@
         transform: translate(-500%);
         background-repeat: no-repeat;
         box-sizing: border-box;
-        background-image: url(../../image/certificate/1.png);
+        background-image: url(../image/certificate/1.png);
         background-size: cover;
         background-position: center;
       }
@@ -79,7 +79,7 @@
         color: #f0f0f0;
       }
 
-      .btn {
+      #spinner {
         position: absolute;
         left: 50%;
         top: 50%;
@@ -101,12 +101,12 @@
         left: 50%;
         top: 12%;
         transform: translate(-50%); */
-        margin: 215px auto;
+        margin: 225px auto;
         font-size: 5rem;
         font-style: italic;
         white-space: nowrap;
         font-family: "Sacramento", cursive;
-        font-weight: 600;
+        font-weight: 400;
         font-style: normal;
       }
 
@@ -116,7 +116,7 @@
 
       .next-level {
         /* border: 1px solid black; */
-        width: 500px;
+        width: 400px;
         height: 100px;
         margin: auto;
         background-color: transparent;
@@ -132,7 +132,7 @@
       .next-level a {
         display: block;
         font-size: 22px;
-        width: 400px;
+        width: 300px;
         height: 40px;
         background-color: rgb(49, 226, 43);
         margin: auto;
@@ -142,21 +142,6 @@
         border-radius: 10px;
         color: #f0f0f0;
       }
-
-      /* .akhir {
-        position: absolute;
-        left: 50%;
-        top: 30%;
-        transform: translate(-50%);
-        display: block;
-        width: 400px;
-        height: 30px;
-        background-color: green;
-        border-radius: 8px;
-        color: #0a0000;
-        display: none;
-        font-size: 24px;
-      } */
     </style>
   </head>
 
@@ -185,13 +170,12 @@
           <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
           <span class="visually-hidden" role="status">Loading...</span>
         </button> -->
-        <button class="btn btn-primary" type="button" disabled>
+        <button class="btn btn-primary" type="button" disabled id="spinner">
           <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
           <span role="status">Loading...</span>
         </button>
-        <!-- <div class="akhir"><p>Kamu telah menyelesaikan semua grade pada game ini</p></div> -->
 
-        <div class="next-level"><a href="../kata-kerja/kata-kerja1/preface.html"> LANJUT KE GRADE DUA</a></div>
+        <div class="next-level"><a href="../kata-sifat/kata-sifat1/preface.html">LANJUT KE GRADE DUA</a></div>
       </div>
     </center>
 
@@ -256,10 +240,9 @@
         const username = document.getElementById("inputName").value.trim();
         const usernameElement = document.getElementById("username");
         const download = document.querySelector(".download");
-        const spinner = document.querySelector(".btn"); // Assuming .spinner instead of .btn
+        const spinner = document.getElementById("spinner"); // Assuming .spinner instead of .btn
         const nextLevel = document.querySelector(".next-level");
         const form = document.querySelector(".form");
-        // const akhir = document.querySelector(".akhir");
 
         if (!username) {
           alert("Silakan tulis nama Anda");
@@ -271,7 +254,6 @@
           spinner.style.display = "block";
           download.style.display = "none";
           form.style.display = "none";
-          // akhir.style.display = "none";
 
           // Generate the certificate and download it
           html2canvas(document.getElementById("certificate"))
@@ -286,7 +268,6 @@
               // After download, hide spinner and show next level
               spinner.style.display = "none";
               nextLevel.style.display = "block";
-              // akhir.style.display = "block";
             })
             .catch(function (error) {
               console.error("Error generating certificate:", error);
