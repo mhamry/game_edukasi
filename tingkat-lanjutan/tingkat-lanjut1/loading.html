@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading...</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #222;
+        color: white;
+        font-family: Arial, sans-serif;
+      }
+
+      .countdown {
+        font-size: 150px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="countdown">5</div>
+
+    <script>
+      let waktu = 5; // detik hitung mundur
+      const countEl = document.querySelector(".countdown");
+
+      const timer = setInterval(() => {
+        waktu--;
+        countEl.textContent = waktu;
+
+        if (waktu <= 0) {
+          clearInterval(timer);
+          window.location.href = "index.html"; // halaman tujuan
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
