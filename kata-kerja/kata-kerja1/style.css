@@ -1,11 +1,12 @@
 body {
-  background-color: grey;
+  background-color: black;
   overflow: hidden;
 }
 
 h1 {
   margin: auto;
   text-align: center;
+  color: white;
 }
 .game {
   width: 400px;
@@ -151,7 +152,7 @@ h1 {
   top: 0;
   left: 0;
   z-index: -999;
-  background-color: grey;
+  background-color: black;
 }
 
 .materi {
