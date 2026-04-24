@@ -37,15 +37,7 @@
             overflow: hidden;
           }
 
-          /* .container {
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(green, blue);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-      } */
+        
 
           .tombol a {
             text-decoration: none;
@@ -118,39 +110,54 @@
             text-decoration: none;
           }
 
-          .noun {
-            width: 200px;
-            height: 200px;
-            background-color: aqua;
-          }
+         
 
-          .verb {
-            width: 200px;
-            height: 200px;
-            background-color: aqua;
+          .noun:hover{
+            background-color: yellow;
+            transform: scale(1.1);
+            color: black;
           }
-
-          .adjective {
-            width: 200px;
-            height: 200px;
-            background-color: aqua;
+          .adjective:hover{
+            background-color: yellow;
+            transform: scale(1.1);
+            color: black;
           }
-
-          .personal-pronoun {
-            width: 200px;
-            height: 200px;
-            background-color: aqua;
+          .verb:hover{
+            background-color: yellow;
+            transform: scale(1.1);
+            color: black;
           }
+          .grammar:hover{
+            background-color: yellow;
+            transform: scale(1.1);
+            color: black;
+          }
+          .intermediate:hover{
+            background-color: yellow;
+            transform: scale(1.1);
+            color: black;
+          }
+          .advance:hover{
+            background-color: yellow;
+            transform: scale(1.1);
+            color: black;
+          }
+    
 
           .noun,
           .verb,
           .adjective,
-          .personal-pronoun {
+          .grammar,
+          .advance,
+          .intermediate {
             width: 150px;
             height: 150px;
+            background-color: black;
             box-shadow: 6px 6px 6px 4px rgb(255, 255, 255);
             border-radius: 15px;
             margin-right: 50px;
+            color: white;
+            transition: 0.5s;
           }
 
           #canvas {
@@ -160,30 +167,16 @@
             z-index: -999;
           }
 
-          @media (max-width: 600px) {
-            .container {
-              width: 400px;
-              gap: 10px;
-              margin-top: 80px;
-            }
-            .noun,
-            .verb,
-            .adjective,
-            .personal-pronoun {
-              width: 150px;
-              height: 150px;
-              box-shadow: 6px 6px 6px 4px rgb(0, 0, 0);
-              border-radius: 15px;
-              margin-right: 10px;
-            }
-          }
-
+         
           .noun p,
           .verb p,
           .adjective p,
-          .personal-pronoun p {
-            display: block;
-            text-align: center;
+          .grammar p,
+          .intermediate p,
+          .advance p {
+            display: flex;
+            justify-content: center;
+          align-items: center;
             text-decoration: none;
             padding-top: 10px;
           }
@@ -202,19 +195,50 @@
             font-size: 17px;
           }
 
-          @media (max-width: 600px) {
+           @media (max-width:600px) {
+            .container {
+              width: 300px;
+              gap: 10px;
+              margin-top: 80px;
+            }
             .noun,
             .verb,
             .adjective,
-            .personal-pronoun {
-              width: 125px;
-              height: 125px;
+            .grammar,
+            .intermediate,
+            .advance {
+              align-items: center;
+              flex-wrap: wrap;
+              width: 110px;
+              height: 110px;
+              box-shadow: 6px 6px 6px 4px rgb(0, 35, 0);
+              border-radius: 15px;
+              margin: 10px;
+              margin-bottom: 20px;
+
+             
             }
 
-            .container {
-              width: 300px;
-            }
+            .emoji {
+           
+            font-size: 40px;
+           
+           
           }
+
+            .noun:hover
+           {
+            background-color: yellow;
+            color: black;
+            transform: scale(1.1);
+
+            }
+           
+          }
+          
+
+
+        
         </style>
       </head>
       <body>
@@ -252,14 +276,14 @@
           </a>
 
           <a href="tata-bahasa/tata-bahasa1/preface.html">
-            <div class="personal-pronoun">
+            <div class="grammar">
               <p>GRAMMAR</p>
               <p class="emoji">🎖️</p>
             </div>
           </a>
 
           <a href="intermediate/intermediate1/preface.html">
-            <div class="noun">
+            <div class="intermediate">
               <p>INTERMEDIATE</p>
               <p class="emoji">⭐</p>
               <p></p>
@@ -267,7 +291,7 @@
           </a>
 
           <a href="tingkat-lanjutan/tingkat-lanjut1/preface.html">
-            <div class="noun">
+            <div class="advance">
               <p>ADVANCE</p>
               <p class="emoji">🏆</p>
               <p></p>
